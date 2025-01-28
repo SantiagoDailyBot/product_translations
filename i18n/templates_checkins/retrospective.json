@@ -1,0 +1,88 @@
+{
+    "fields": [
+        {
+            "uuid": "22666970-865c-4a77-b6bd-f76c996eb79c",
+            "logic": {
+                "next_key": 1,
+                "prev_key": -1,
+                "question_key": 0
+            },
+            "question": "What went well?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿Qué ha ido bien?",
+                        "question_short": "Lo que ha ido bien"
+                    },
+                    "pt": {
+                        "question": "O que deu certo?",
+                        "question_short": "O que deu certo"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Went well"
+        },
+        {
+            "uuid": "61cbbc54-0a2d-464d-a033-8f4cd6ed0bdb",
+            "logic": {
+                "next_key": 2,
+                "prev_key": 0,
+                "question_key": 1
+            },
+            "question": "What did you learn?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿Qué aprendizajes has tenido?",
+                        "question_short": "Aprendizajes clave"
+                    },
+                    "pt": {
+                        "question": "O que você aprendeu?",
+                        "question_short": "O que você aprendeu?"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Key learnings"
+        },
+        {
+            "uuid": "004e9abd-56d5-4678-bd40-0f1b0954c9f1",
+            "logic": {
+                "next_key": -1,
+                "prev_key": 1,
+                "question_key": 2
+            },
+            "question": "What needs improvement? (i.e it went wrong, it wasn’t delivered or didn’t go as expected)",
+            "is_hidden": false,
+            "is_blocker": true,
+            "is_optional": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿En qué debemos mejorar? (ej: cosas que no salieron bien o como esperábamos)",
+                        "question_short": "Puntos de mejora"
+                    },
+                    "pt": {
+                        "question": "O que precisa ser melhorado? (por exemplo, o que deu errado, não foi entregue ou não aconteceu como esperado)",
+                        "question_short": "Melhorias necessárias"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Needs improvement"
+        }
+    ],
+    "version": 14,
+    "has_questions_variations": false,
+    "has_conditional_questions": false
+}

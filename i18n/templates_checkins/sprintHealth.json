@@ -1,0 +1,88 @@
+{
+    "fields": [
+        {
+            "uuid": "3ae479d3-d845-4d9f-8d93-94a0b20eee40",
+            "logic": {
+                "next_key": 1,
+                "prev_key": -1,
+                "question_key": 0
+            },
+            "question": "How confident are you that you will complete your tasks for this Sprint?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿Tienes seguridad de poder completar tus tareas para este Sprint?",
+                        "question_short": "Confianza individual"
+                    },
+                    "pt": {
+                        "question": "Como você se sente em relação à sua capacidade de completar suas tarefas neste Sprint?",
+                        "question_short": "Confiança individual"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Individual confidence"
+        },
+        {
+            "uuid": "bac00a32-91c7-4e77-9bd8-feb1180c8256",
+            "logic": {
+                "next_key": 2,
+                "prev_key": 0,
+                "question_key": 1
+            },
+            "question": "How confident are you that the rest of the team will complete the tasks?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿Tienes seguridad que el resto del equipo podrá completar las tareas?",
+                        "question_short": "Confianza del equipo"
+                    },
+                    "pt": {
+                        "question": "Você acha que o restante da equipe conseguirá completar as tarefas do Sprint?",
+                        "question_short": "Confiança do time"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Overall team confidence"
+        },
+        {
+            "uuid": "8522c8ab-58a7-4e9d-a392-f83613eccf60",
+            "logic": {
+                "next_key": -1,
+                "prev_key": 1,
+                "question_key": 2
+            },
+            "question": "Do you have any recommendations for managing better the Sprint and priorities?",
+            "is_hidden": false,
+            "is_blocker": true,
+            "is_optional": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿Tienes alguna recomendación sobre la gestión del Sprint y las prioridades?",
+                        "question_short": "Recomendaciones"
+                    },
+                    "pt": {
+                        "question": "Tem alguma sugestão para melhorar a gestão do Sprint e das prioridades?",
+                        "question_short": "Recomendações"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Recommendations"
+        }
+    ],
+    "version": 12,
+    "has_questions_variations": false,
+    "has_conditional_questions": false
+}

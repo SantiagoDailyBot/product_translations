@@ -1,0 +1,34 @@
+{
+    "fields": [
+        {
+            "uuid": "c1304c0d-b9d1-4080-80a2-3db077c84d44",
+            "logic": {
+                "next_key": -1,
+                "prev_key": -1,
+                "question_key": 0
+            },
+            "question": "How was your weekend? Is there anything fun you'd like to share? Jokes are accepted",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿Qué tal el fin de semana? ¿Quieres contarme algo divertido o gracioso? También acepto chistes.",
+                        "question_short": "Sobre el fin de semana o random :)"
+                    },
+                    "pt": {
+                        "question": "Como foi o seu final de semana? Tem algo divertido para compartilhar? Piadas também são bem-vindas!",
+                        "question_short": "Sobre o final de semana ou coisas divertidas :)"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "About weekend or fun facts :)"
+        }
+    ],
+    "version": 10,
+    "has_questions_variations": false,
+    "has_conditional_questions": false
+}

@@ -1,0 +1,137 @@
+{
+    "logic": [
+        {
+            "next_key": 1,
+            "prev_key": false,
+            "question_key": 0
+        },
+        {
+            "next_key": 2,
+            "prev_key": 0,
+            "question_key": 1
+        },
+        {
+            "next_key": 3,
+            "prev_key": 1,
+            "question_key": 2
+        },
+        {
+            "next_key": false,
+            "prev_key": 2,
+            "question_key": 3
+        }
+    ],
+    "fields": [
+        {
+            "uuid": "09c36614-c39f-4bc5-98ad-bc2e84367b91",
+            "question": "What is the scope of this release?",
+            "is_blocker": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿Cuál es el scope de esta versión?",
+                        "question_short": "Scope"
+                    },
+                    "pt": {
+                        "question": "Qual é o escopo desta versão?",
+                        "question_short": "Escopo"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Scope"
+        },
+        {
+            "uuid": "051f50c9-c45c-4ff0-be8e-e077a6420b4f",
+            "question": "What are the risks?",
+            "is_blocker": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿Cuáles son los riesgos?",
+                        "question_short": "Riesgos"
+                    },
+                    "pt": {
+                        "question": "Quais são os riscos?",
+                        "question_short": "Riscos"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Risks"
+        },
+        {
+            "uuid": "14bf4f99-9d55-46eb-b6f7-d26b06fd1f31",
+            "question": "List the team involved:",
+            "is_blocker": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "Nombra al equipo involucrado:",
+                        "question_short": "Equipo involucrado"
+                    },
+                    "pt": {
+                        "question": "Nomeie a equipe envolvida:",
+                        "question_short": "Equipe envolvida"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Team involved"
+        },
+        {
+            "uuid": "4913fcfc-a29b-420d-b66c-f5b274f40fa0",
+            "choices": [
+                {
+                    "label": "Yes",
+                    "value": true
+                },
+                {
+                    "label": "No",
+                    "value": false
+                }
+            ],
+            "question": "Is the pull request reviewed?",
+            "is_blocker": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "choices": [
+                            {
+                                "label": "Sí",
+                                "value": true
+                            },
+                            {
+                                "label": "No",
+                                "value": false
+                            }
+                        ],
+                        "question": "¿Se revisó la pull request?",
+                        "question_short": "Revisión de PR"
+                    },
+                    "pt": {
+                        "choices": [
+                            {
+                                "label": "Sim",
+                                "value": true
+                            },
+                            {
+                                "label": "Não",
+                                "value": false
+                            }
+                        ],
+                        "question": "O pull request foi revisado?",
+                        "question_short": "Revisão de PR"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "boolean",
+            "question_short": "PR review"
+        }
+    ],
+    "version": 5
+}

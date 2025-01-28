@@ -1,0 +1,142 @@
+{
+    "fields": [
+        {
+            "uuid": "40ea8f75-cdff-45db-ac15-14e2d6568220",
+            "logic": {
+                "next_key": 1,
+                "prev_key": -1,
+                "question_key": 0
+            },
+            "question": "How are you feeling, out 5?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿Cómo te sientes, del 1 al 5?",
+                        "question_short": "¿Cómo te sientes (1-5)?"
+                    },
+                    "pt": {
+                        "question": "¿Cómo te sientes, del 1 al 5?",
+                        "question_short": "¿Cómo te sientes (1-5)?"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "numeric",
+            "question_short": "Out of 5"
+        },
+        {
+            "uuid": "44b000bd-f674-49ed-a4f3-4455a3085711",
+            "logic": {
+                "next_key": 2,
+                "prev_key": 0,
+                "question_key": 1
+            },
+            "question": "What could improve this score, if possible?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿Qué podría mejorar este puntaje, si es posible?",
+                        "question_short": "¿Qué podría mejorar tu puntaje?"
+                    },
+                    "pt": {
+                        "question": "O que poderia melhorar essa nota, se for possível?",
+                        "question_short": "O que pode melhorar sua nota?"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "How to improve?"
+        },
+        {
+            "uuid": "dd48a37d-617a-48ac-abed-6f77206e1550",
+            "logic": {
+                "next_key": 3,
+                "prev_key": 1,
+                "question_key": 2
+            },
+            "question": "What's going great for you right now?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿Qué está yendo muy bien para ti en este momento?",
+                        "question_short": "¿Qué va bien ahora?"
+                    },
+                    "pt": {
+                        "question": "O que está indo muito bem para você agora?",
+                        "question_short": "O que está indo bem agora?"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "What's going well?"
+        },
+        {
+            "uuid": "45ffe5d1-86f2-42ae-8bcf-ccd7ae945ffe",
+            "logic": {
+                "next_key": 4,
+                "prev_key": 2,
+                "question_key": 3
+            },
+            "question": "Is there anything I can help you with?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿Hay algo en lo que te pueda ayudar?",
+                        "question_short": "¿Puedo ayudarte en algo?"
+                    },
+                    "pt": {
+                        "question": "Tem algo com que eu possa te ajudar?",
+                        "question_short": "Posso ajudar em algo?"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "How can I help?"
+        },
+        {
+            "uuid": "0743bb1f-6785-4fcd-ad5c-864496107fe0",
+            "logic": {
+                "next_key": -1,
+                "prev_key": 3,
+                "question_key": 4
+            },
+            "question": "Any other feedback, on how you're doing or how we're doing?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+                "i18n": {
+                    "es": {
+                        "question": "¿Algún otro comentario, sobre cómo estás o cómo lo estamos haciendo?",
+                        "question_short": "¿Algún comentario adicional?"
+                    },
+                    "pt": {
+                        "question": "Algum outro comentário, sobre como você está ou como estamos indo?",
+                        "question_short": "Algum comentário extra?"
+                    }
+                },
+                "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Other comments"
+        }
+    ],
+    "version": 15,
+    "has_questions_variations": false,
+    "has_conditional_questions": false
+}
