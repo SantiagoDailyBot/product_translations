@@ -1,0 +1,128 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "3517bc62-5bf0-4a78-8fac-a2d0c85333d2",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Customer feedback request",
+            "description": "Do you have some feedback for this organization? Complete this customer feedback request form.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "3642153d-269a-409d-8e0a-d83620dfa7a7",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "Company/organization name:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Nombre de la empresa u organización:",
+                                    "question_short": "Nombre de la empresa/org"
+                                },
+                                "pt": {
+                                    "question": "Nome da companhia ou organização:",
+                                    "question_short": "Nome da companhia/org"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Company/org name"
+                    },
+                    {
+                        "uuid": "de2b64f7-2fff-4630-9303-07c5169594e0",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "Contact name:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Nombre del contacto:",
+                                    "question_short": "Nombre del contacto"
+                                },
+                                "pt": {
+                                    "question": "Nome de contato:",
+                                    "question_short": "Nome de contato"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Contact name"
+                    },
+                    {
+                        "uuid": "32f42512-a210-4284-98f7-3ae78a600d8e",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "question": "Customer feedback:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Comentarios:",
+                                    "question_short": "Comentarios"
+                                },
+                                "pt": {
+                                    "question": "Comentários:",
+                                    "question_short": "Comentários"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Customer feedback"
+                    }
+                ],
+                "version": 7,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "This form lets sales agents or vendors registered comments, feedback or features requested by customers",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Solicitud de comentarios de clientes",
+                    "description": "¿Tiene algún comentario para esta organización? Complete este formulario de solicitud de comentarios de los clientes."
+                },
+                "pt": {
+                    "name": "Solicitação de feedback do cliente",
+                    "description": "Você tem algum feedback para esta organização? Preencha este formulário de solicitação de feedback do cliente."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 3,
+            "emoji_url": "https://d1d3uvgqmu38d0.cloudfront.net/static/templates_icons/feedback_or_requests_from_customers@2x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-09T15:06:53.106Z",
+            "updated_at": "2023-03-23T22:08:12.282Z",
+            "last_updated_by": null
+        }
+    }
+]

@@ -1,0 +1,376 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "a4687507-e3c0-4679-ad70-5d4196ef151b",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Sales or contract record",
+            "description": "This template is created to help teams document a new sale or contract.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "d19a741f-6347-4d9b-9d9d-5fed8c7aaf3b",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "Company/org name:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Nombre de la empresa u organización:",
+                                    "question_short": "Nombre de empresa/org"
+                                },
+                                "pt": {
+                                    "question": "Nome da companhia ou organização:",
+                                    "question_short": "Nome da companhia/org"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Company/org name"
+                    },
+                    {
+                        "uuid": "958bf3d9-77df-4ec5-a489-b51ff21749d9",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "Contract start date:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Fecha de comienzo del contrato:",
+                                    "question_short": "Fecha de comienzo"
+                                },
+                                "pt": {
+                                    "question": "Data de início do contrato:",
+                                    "question_short": "Data de início do contrato"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Contract start date"
+                    },
+                    {
+                        "uuid": "30266ce0-51c7-496f-bf30-1c54ba6f0b19",
+                        "logic": {
+                            "next_key": 3,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "question": "Registration number:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Número de registro:",
+                                    "question_short": "Número de registro"
+                                },
+                                "pt": {
+                                    "question": "Número de registro:",
+                                    "question_short": "Número de registro"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "numeric",
+                        "question_short": "Registration number"
+                    },
+                    {
+                        "uuid": "8d15d444-79bc-4257-b590-3161ba863962",
+                        "logic": {
+                            "next_key": 4,
+                            "prev_key": 2,
+                            "question_key": 3
+                        },
+                        "question": "Contact full name:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Nombre completo del contacto:",
+                                    "question_short": "Nombre del contacto"
+                                },
+                                "pt": {
+                                    "question": "Nome completo de contato:",
+                                    "question_short": "Nome de contato"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Contact full name"
+                    },
+                    {
+                        "uuid": "0ff969f1-4c7a-420c-85a8-f0e9546456b4",
+                        "logic": {
+                            "next_key": 5,
+                            "prev_key": 3,
+                            "question_key": 4
+                        },
+                        "question": "Address:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Dirección:",
+                                    "question_short": "Dirección"
+                                },
+                                "pt": {
+                                    "question": "Endereço:",
+                                    "question_short": "Endereço"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Address"
+                    },
+                    {
+                        "uuid": "de4e198b-b8a9-43b1-9b40-af5c4788d684",
+                        "logic": {
+                            "next_key": 6,
+                            "prev_key": 4,
+                            "question_key": 5
+                        },
+                        "question": "Email:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Correo electrónico:",
+                                    "question_short": "Correo electrónico"
+                                },
+                                "pt": {
+                                    "question": "Correio eletrônico:",
+                                    "question_short": "Correio eletrônico"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Email"
+                    },
+                    {
+                        "uuid": "7d35edb4-4e50-4816-a23d-377162234055",
+                        "logic": {
+                            "next_key": 7,
+                            "prev_key": 5,
+                            "question_key": 6
+                        },
+                        "question": "Telephone:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Teléfono:",
+                                    "question_short": "Teléfono"
+                                },
+                                "pt": {
+                                    "question": "Telefone:",
+                                    "question_short": "Telefone"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Telephone"
+                    },
+                    {
+                        "uuid": "677dad91-b1e1-43c7-a0e3-4df4798c32f8",
+                        "logic": {
+                            "next_key": 8,
+                            "prev_key": 6,
+                            "question_key": 7
+                        },
+                        "question": "Country of HQ:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "País de la sede:",
+                                    "question_short": "País de sede"
+                                },
+                                "pt": {
+                                    "question": "País da sede:",
+                                    "question_short": "País da sede"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Country of HQ"
+                    },
+                    {
+                        "uuid": "d65a8fbf-ef7b-4a49-bed7-e3fbf2d353f6",
+                        "logic": {
+                            "next_key": 9,
+                            "prev_key": 7,
+                            "question_key": 8
+                        },
+                        "question": "Number of licenses:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Número de licencias:",
+                                    "question_short": "Número de licencias"
+                                },
+                                "pt": {
+                                    "question": "Número de licenças:",
+                                    "question_short": "Número de licenças"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "numeric",
+                        "question_short": "Number of licenses"
+                    },
+                    {
+                        "uuid": "40a9e3ce-9b7d-407d-a73e-2437fc253f67",
+                        "logic": {
+                            "next_key": 10,
+                            "prev_key": 8,
+                            "question_key": 9
+                        },
+                        "question": "Contract/sale amount:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Monto del contrato:",
+                                    "question_short": "Monto del contrato"
+                                },
+                                "pt": {
+                                    "question": "Valor do contrato:",
+                                    "question_short": "Valor do contrato"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Contract/sale amount"
+                    },
+                    {
+                        "uuid": "cfd79ba1-610a-40cb-854e-a7830e6f9711",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 9,
+                            "question_key": 10
+                        },
+                        "choices": [
+                            {
+                                "label": "Yes",
+                                "value": true,
+                                "placeholder": "Yes"
+                            },
+                            {
+                                "label": "No",
+                                "value": false,
+                                "placeholder": "No"
+                            }
+                        ],
+                        "question": "Auto-renewable?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Sí",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "No",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "Autorenovable?:",
+                                    "question_short": "Autorenovación"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Sim",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "Não",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "Auto-renovável?:",
+                                    "question_short": "Auto-renovável?"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "boolean",
+                        "question_short": "Auto-renewable"
+                    }
+                ],
+                "version": 8,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "This form lets sales agents record the conditions of new sales or contracts",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Documentar una venta o contrato",
+                    "description": "Esta plantilla se creó para ayudar a los equipos a documentar una nueva venta o contrato."
+                },
+                "pt": {
+                    "name": "Registro de vendas ou contrato",
+                    "description": "Este modelo é criado para ajudar as equipes a documentar uma nova venda ou contrato."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 3,
+            "emoji_url": "https://d1d3uvgqmu38d0.cloudfront.net/static/templates_icons/sales_or_contact_record@2x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-09T15:00:21.321Z",
+            "updated_at": "2023-03-23T22:15:24.383Z",
+            "last_updated_by": null
+        }
+    }
+]

@@ -1,0 +1,132 @@
+[
+  {
+    "model": "followups.template",
+    "pk": "0f47969c-ee73-4de2-b048-6b7633737264",
+    "fields": {
+      "organization": null,
+      "system_default": true,
+      "owner": null,
+      "name": "Vacation request",
+      "description": "A vacation request form offers you a way to standardize the process of managing time-off requests from your team.",
+      "archived": false,
+      "questions": {
+        "fields": [
+          {
+            "uuid": "4ce4a9ca-a6e7-470e-9b9b-d11e26aed383",
+            "logic": {
+              "next_key": 1,
+              "prev_key": -1,
+              "question_key": 0
+            },
+            "question": "Vacation start date:",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "¿Fecha de inicio de vacaciones?",
+                  "question_short": "Fecha de inicio"
+                },
+                "pt": {
+                  "question": "Data de início das férias?",
+                  "question_short": "Data de início"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Vacation start date"
+          },
+          {
+            "uuid": "016fffc3-ac53-4e14-a33e-d51e0e684636",
+            "logic": {
+              "next_key": 2,
+              "prev_key": 0,
+              "question_key": 1
+            },
+            "question": "Vacation end date:",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "¿Fecha de finalización de vacaciones?",
+                  "question_short": "Fecha de finalización"
+                },
+                "pt": {
+                  "question": "Data de término das férias?",
+                  "question_short": "Data de término"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Vacation end date"
+          },
+          {
+            "uuid": "26cb0fd0-2eed-4b4c-a184-eb92c744c732",
+            "logic": {
+              "next_key": -1,
+              "prev_key": 1,
+              "question_key": 2
+            },
+            "question": "Any additional comments?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "¿Algún comentario adicional?",
+                  "question_short": "Comentarios adicionales"
+                },
+                "pt": {
+                  "question": "Algum comentário adicional?",
+                  "question_short": "Comentários adicionais"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Comments"
+          }
+        ],
+        "version": 11,
+        "has_conditional_questions": false
+      },
+      "has_conditional_questions": false,
+      "has_questions_variations": false,
+      "intro": "Before you proceed – some ground rules: 1. You must submit this form at least one week before the desired vacation period. 2. It's best to discuss employee vacation schedules with your supervisor. 3. In case of an emergency, your contact info needs to be available.",
+      "outro": "Great! We'll get back to you once we review your request.",
+      "i18n_meta": {
+        "es": {
+          "name": "Solicitud de vacaciones",
+          "intro": "Antes de comenzar, considera:\n\n1. Envía este formulario al menos una semana antes del período de vacaciones deseado.\n2. Es mejor discutir los horarios de vacaciones con tu supervisor.\n3. En caso de una emergencia, tu información de contacto debe estar disponible.",
+          "outro": "¡Genial! Nos comunicaremos contigo una vez que revisemos tu solicitud.",
+          "description": "La solicitud de vacaciones te ofrece una forma de estandarizar el proceso de gestión de solicitudes de tu equipo."
+        },
+        "pt": {
+          "name": "Solicitação de férias",
+          "intro": "Antes de começar, considere:\n\n1. Envie este formulário pelo menos uma semana antes do período de férias desejado.\n2. É melhor discutir os horários de férias com seu supervisor.\n3. Em caso de emergência, suas informações de contato devem estar disponíveis.",
+          "outro": "Frio! Entraremos em contato assim que analisarmos sua solicitação.",
+          "description": "Um formulário de solicitação de férias oferece uma maneira de padronizar o processo de gerenciamento de solicitações de folga de sua equipe."
+        }
+      },
+      "metadata": {
+        "has_special_vars": false
+      },
+      "show_all_blockers": true,
+      "category": null,
+      "emoji_url": "https://d2e7nn6oh5ucns.cloudfront.net/images/template_icons/emoji_vacation_request@2x.png",
+      "skill_type": "forms",
+      "frequency_type": "weekly",
+      "frequency": 1,
+      "frequency_on_days": "[\"1\"]",
+      "created_at": "2021-06-20T01:56:43.963Z",
+      "updated_at": "2023-03-23T22:16:15.899Z",
+      "last_updated_by": null
+    }
+  }
+]

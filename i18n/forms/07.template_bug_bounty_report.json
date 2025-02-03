@@ -1,0 +1,263 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "224c98d2-a5da-495c-9577-c47cacbc32d2",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Bug bounty report",
+            "description": "Describe the details of a bug bounty so the team can understand the vulnerability and assess costs.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "5b41f706-2c00-4969-9f69-5789569a98b4",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "When was the vulnerability reported? (Date format YYYY/MM/DD):",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Cuando fue reportada la vulnerabilidad? (Formato AAAA/MM/DD):",
+                                    "question_short": "Fecha de reporte"
+                                },
+                                "pt": {
+                                    "question": "Quando a vulnerabilidade foi relatada? (Formato AAAA/MM/DD):",
+                                    "question_short": "Data do relatório"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Date of report"
+                    },
+                    {
+                        "uuid": "c0d1d5e6-0ad3-4960-9818-9e0b0e903897",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "Describe the reported vulnerability:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Describe la vulnerabilidad reportada:",
+                                    "question_short": "Vulnerabilidad"
+                                },
+                                "pt": {
+                                    "question": "Descreva a vulnerabilidade relatada:",
+                                    "question_short": "Vulnerabilidade"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Vulnerability"
+                    },
+                    {
+                        "uuid": "a942cdd7-1345-4219-afeb-9c92258ba139",
+                        "logic": {
+                            "next_key": 3,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "question": "Enter the link of your task manager or where we can get more info about the vulnerability:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Introduce el enlace de tu administrador de tareas o donde podemos obtener más información sobre la vulnerabilidad:",
+                                    "question_short": "Más info"
+                                },
+                                "pt": {
+                                    "question": "Entre no link do seu gerenciador de tarefas ou onde podemos obter mais informações sobre a vulnerabilidade:",
+                                    "question_short": "Mais info"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "More info"
+                    },
+                    {
+                        "uuid": "6bcba90b-2be2-42ea-a731-d0978054d48c",
+                        "logic": {
+                            "next_key": 4,
+                            "prev_key": 2,
+                            "question_key": 3
+                        },
+                        "choices": [
+                            {
+                                "label": "High",
+                                "value": "high"
+                            },
+                            {
+                                "label": "Moderate",
+                                "value": "moderate"
+                            },
+                            {
+                                "label": "Low",
+                                "value": "low"
+                            },
+                            {
+                                "label": "None",
+                                "value": "none"
+                            }
+                        ],
+                        "question": "What is the criticality level assigned according to our Bug Bounty guidelines?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Alto",
+                                            "value": "alto"
+                                        },
+                                        {
+                                            "label": "Moderado",
+                                            "value": "moderado"
+                                        },
+                                        {
+                                            "label": "Bajo",
+                                            "value": "bajo"
+                                        },
+                                        {
+                                            "label": "Ninguno",
+                                            "value": "ninguno"
+                                        }
+                                    ],
+                                    "question": "¿Cuál es el nivel de criticidad asignado según el programa de Bug Bounty?:",
+                                    "question_short": "Nivel de criticidad"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Alto",
+                                            "value": "alto"
+                                        },
+                                        {
+                                            "label": "Moderado",
+                                            "value": "moderado"
+                                        },
+                                        {
+                                            "label": "Baixo",
+                                            "value": "baixo"
+                                        },
+                                        {
+                                            "label": "Nenhum",
+                                            "value": "nenhum"
+                                        }
+                                    ],
+                                    "question": "Qual é o nível de criticidade atribuído de acordo com nossas diretrizes de Bug Bounty?:",
+                                    "question_short": "Nível de criticidade"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "multiple_choice",
+                        "question_short": "Criticality level"
+                    },
+                    {
+                        "uuid": "108876c0-0942-446e-ac37-669100939874",
+                        "logic": {
+                            "next_key": 5,
+                            "prev_key": 3,
+                            "question_key": 4
+                        },
+                        "question": "What's the bounty amount to pay?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Cuál es el monto de la recompensa a pagar?:",
+                                    "question_short": "Monto de recompensa"
+                                },
+                                "pt": {
+                                    "question": "Qual é o valor da recompensa a pagar?:",
+                                    "question_short": "Valor da recompensa"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "numeric",
+                        "question_short": "Bounty amount"
+                    },
+                    {
+                        "uuid": "951801a9-8277-4d2c-8763-b39dfdbbd9a7",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 4,
+                            "question_key": 5
+                        },
+                        "question": "What's the account where the bounty should be paid?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Cuál es la cuenta donde se debe pagar la recompensa?:",
+                                    "question_short": "Cuenta"
+                                },
+                                "pt": {
+                                    "question": "Qual é a conta onde a recompensa deve ser paga?:",
+                                    "question_short": "Conta"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Account"
+                    }
+                ],
+                "version": 7,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Informe de recompensas por errores",
+                    "description": "Describa los detalles de una recompensa por errores para que el equipo pueda comprender la vulnerabilidad y evaluar los costos."
+                },
+                "pt": {
+                    "name": "Relatório de recompensa por bugs",
+                    "description": "Descreva os detalhes de uma recompensa por bugs para que a equipe possa entender a vulnerabilidade e avaliar os custos."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 2,
+            "emoji_url": "https://uploads-ssl.webflow.com/5f454f5b1ec3949c1416957f/62fd1e921c8b0e783fd38001_bug_bounty_report%402x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-09T14:45:11.404Z",
+            "updated_at": "2023-03-23T22:07:10.655Z",
+            "last_updated_by": null
+        }
+    }
+]

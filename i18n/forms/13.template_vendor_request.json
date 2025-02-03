@@ -1,0 +1,389 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "3ee95b61-f3a9-4eef-8c73-9c6f79801a84",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Vendor request",
+            "description": "Do you need to add a vendor to your organization? Make sure you ask your security team first to make sure is compliant.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "87c9fd1a-3f3b-4b6a-9fe0-88f1ee438c87",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "Vendor name:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Nombre del proveedor:",
+                                    "question_short": "Nombre del proveedor"
+                                },
+                                "pt": {
+                                    "question": "Nome do fornecedor:",
+                                    "question_short": "Nome do fornecedor"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Vendor name"
+                    },
+                    {
+                        "uuid": "81fffaac-8a63-479e-91a7-55eb0ab40c18",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "Vendor URL:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "URL del proveedor:",
+                                    "question_short": "URL del proveedor"
+                                },
+                                "pt": {
+                                    "question": "URL do fornecedor:",
+                                    "question_short": "URL do fornecedor"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Vendor URL"
+                    },
+                    {
+                        "uuid": "9e42b72e-897d-46fc-b80c-89e44c2e919d",
+                        "logic": {
+                            "next_key": 3,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "question": "Describe and explain the purpose for integrating this new vendor into the company:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Describe y explica el propósito de la integración de este nuevo proveedor en la empresa:",
+                                    "question_short": "Propósito de la integración"
+                                },
+                                "pt": {
+                                    "question": "Descrever e explicar o objetivo da integração deste novo fornecedor na empresa:",
+                                    "question_short": "Objetivo da integração"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Purpose of integration"
+                    },
+                    {
+                        "uuid": "97a78dcb-4415-40f8-a933-23dff0dbce86",
+                        "logic": {
+                            "next_key": 4,
+                            "prev_key": 2,
+                            "question_key": 3
+                        },
+                        "choices": [
+                            {
+                                "label": "Very critical",
+                                "value": "very-critical"
+                            },
+                            {
+                                "label": "Moderately critical",
+                                "value": "moderately-critical"
+                            },
+                            {
+                                "label": "Slightly critical",
+                                "value": "slightly-critical"
+                            }
+                        ],
+                        "question": "How critical is the use of this vendor for the organization? Make sure you have read our vendor policy section in the vendor management procedure:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Muy importante",
+                                            "value": "muy-importante"
+                                        },
+                                        {
+                                            "label": "Moderadamente importante",
+                                            "value": "moderadamente-importante"
+                                        },
+                                        {
+                                            "label": "Poco importante",
+                                            "value": "poco-importante"
+                                        }
+                                    ],
+                                    "question": "¿Qué importancia tiene el uso de este proveedor para la organización? Asegúrate de haber leído nuestra política de proveedores en el procedimiento de gestión de proveedores:",
+                                    "question_short": "Valoración del valor"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Muito crítico",
+                                            "value": "muito-critico"
+                                        },
+                                        {
+                                            "label": "Moderadamente crítico",
+                                            "value": "moderadamente-critico"
+                                        },
+                                        {
+                                            "label": "Ligeiramente crítico",
+                                            "value": "ligeiramente-critico"
+                                        }
+                                    ],
+                                    "question": "Quão crítico é o uso deste fornecedor para a organização? Certifique-se de ter lido nossa seção de política de fornecedores no procedimento de gerenciamento de fornecedores:",
+                                    "question_short": "Avaliação de valor"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "multiple_choice",
+                        "question_short": "Value assessment"
+                    },
+                    {
+                        "uuid": "a911b04d-bf71-4671-98c7-028769889fe2",
+                        "logic": {
+                            "next_key": 5,
+                            "prev_key": 3,
+                            "question_key": 4
+                        },
+                        "question": "Describe what kind of data this vendor will handle:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Describe qué tipo de datos manejará este proveedor:",
+                                    "question_short": "Tipo de datos"
+                                },
+                                "pt": {
+                                    "question": "Descreva que tipo de dados esse fornecedor manipulará:",
+                                    "question_short": "Tipo de dados"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Type of data"
+                    },
+                    {
+                        "uuid": "73d08f55-ad22-4f86-9199-4f9c47aeecb8",
+                        "logic": {
+                            "next_key": 6,
+                            "prev_key": 4,
+                            "question_key": 5
+                        },
+                        "question": "Where will this data be stored? Please make your best effort researching on the internet or with their support team. If you're not sure just type \"Not sure\":",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Dónde se almacenarán estos datos? Haz tu mejor esfuerzo investigando en internet o con el equipo de soporte del proveedor. Si aún no estás seguro, escribe \"No estoy seguro\":",
+                                    "question_short": "Ubicación de datos"
+                                },
+                                "pt": {
+                                    "question": "Onde esses dados serão armazenados? Faça o seu melhor pesquisando online ou com a equipe de suporte do provedor. Se ainda não tiver certeza, digite \"Não tenho certeza\":",
+                                    "question_short": "Localização dos dados"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Data location"
+                    },
+                    {
+                        "uuid": "ca15b4a8-6a97-47c8-ae04-c73f98e5d9e2",
+                        "logic": {
+                            "next_key": 7,
+                            "prev_key": 5,
+                            "question_key": 6
+                        },
+                        "question": "Describe when you plan to start using the services, and for how long:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Describe cuándo planeas comenzar a usar los servicios y por cuánto tiempo:",
+                                    "question_short": "Cronograma"
+                                },
+                                "pt": {
+                                    "question": " - descreva quando você planeja começar a usar os serviços e por quanto tempo:",
+                                    "question_short": "Cronograma"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Timeline"
+                    },
+                    {
+                        "uuid": "421ebd7c-c490-4757-a5f0-360b5bbf6548",
+                        "logic": {
+                            "next_key": 8,
+                            "prev_key": 6,
+                            "question_key": 7
+                        },
+                        "choices": [
+                            {
+                                "label": "Yes",
+                                "value": true
+                            },
+                            {
+                                "label": "No",
+                                "value": false
+                            }
+                        ],
+                        "question": "Does the vendor need a subscription or payment?:",
+                        "is_hidden": false,
+                        "is_blocker": true,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Sí",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "No",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "¿El proveedor necesita una suscripción o pago?:",
+                                    "question_short": "Pago"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Sim",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "Não",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "O fornecedor precisa de uma assinatura ou pagamento?:",
+                                    "question_short": "Pagamento"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "boolean",
+                        "question_short": "Subscription or payment"
+                    },
+                    {
+                        "uuid": "1d7d51b7-d67b-41a7-b1e1-0fd7f99e9b60",
+                        "logic": {
+                            "next_key": 9,
+                            "prev_key": 7,
+                            "question_key": 8
+                        },
+                        "question": "If the answer above was yes, explain how much it costs, and what type of subscription is required:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Si la respuesta anterior fue \"sí\", explique cuánto cuesta y qué tipo de suscripción se requiere:",
+                                    "question_short": "Costos y tipo de suscripción"
+                                },
+                                "pt": {
+                                    "question": "Se a resposta acima foi sim, explique quanto custa e que tipo de assinatura é necessária:",
+                                    "question_short": "Custos e tipo de assinatura"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Costs and type of subscription"
+                    },
+                    {
+                        "uuid": "8231bd99-0323-46dc-bcc5-73e006cc2225",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 8,
+                            "question_key": 9
+                        },
+                        "question": "Name a few people who are also interested in having this vendor (if applies):",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Nombra algunas personas que también estén interesadas en tener este proveedor (si aplica):",
+                                    "question_short": "Parte interesada"
+                                },
+                                "pt": {
+                                    "question": "Cite algumas pessoas que também estão interessadas em ter este fornecedor (se aplicável)",
+                                    "question_short": "Parte interessada"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Concerned party"
+                    }
+                ],
+                "version": 9,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Solicitud de proveedor",
+                    "description": "¿Necesita agregar un proveedor a su organización? Asegúrese de preguntar primero a su equipo de seguridad para asegurarse de que cumple con las normas."
+                },
+                "pt": {
+                    "name": "Solicitação de fornecedor",
+                    "description": "Você precisa adicionar um fornecedor à sua organização? Certifique-se de perguntar primeiro à sua equipe de segurança para garantir que esteja em conformidade."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 2,
+            "emoji_url": "https://d1d3uvgqmu38d0.cloudfront.net/static/templates_icons/vendor_request@2x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-09T04:27:25.788Z",
+            "updated_at": "2023-03-23T22:17:05.327Z",
+            "last_updated_by": null
+        }
+    }
+]

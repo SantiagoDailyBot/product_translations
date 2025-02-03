@@ -1,0 +1,185 @@
+[
+  {
+    "model": "followups.template",
+    "pk": "cc664deb-fb4e-4946-b3fd-285279fdde43",
+    "fields": {
+      "organization": null,
+      "system_default": true,
+      "owner": null,
+      "name": "Code Release",
+      "description": "Run this template to structure your upcoming code releases.",
+      "archived": false,
+      "questions": {
+        "fields": [
+          {
+            "uuid": "09c36614-c39f-4bc5-98ad-bc2e84367b91",
+            "logic": {
+              "next_key": 1,
+              "prev_key": -1,
+              "question_key": 0
+            },
+            "question": "What is the scope of this release?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "¿Cuál es el scope de esta versión?",
+                  "question_short": "Scope"
+                },
+                "pt": {
+                  "question": "Qual é o escopo desta versão?",
+                  "question_short": "Escopo"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Scope"
+          },
+          {
+            "uuid": "051f50c9-c45c-4ff0-be8e-e077a6420b4f",
+            "logic": {
+              "next_key": 2,
+              "prev_key": 0,
+              "question_key": 1
+            },
+            "question": "What are the risks?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "¿Cuáles son los riesgos?",
+                  "question_short": "Riesgos"
+                },
+                "pt": {
+                  "question": "Quais são os riscos?",
+                  "question_short": "Riscos"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Risks"
+          },
+          {
+            "uuid": "14bf4f99-9d55-46eb-b6f7-d26b06fd1f31",
+            "logic": {
+              "next_key": 3,
+              "prev_key": 1,
+              "question_key": 2
+            },
+            "question": "List the team involved:",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "Nombra al equipo involucrado:",
+                  "question_short": "Equipo involucrado"
+                },
+                "pt": {
+                  "question": "Nomeie a equipe envolvida:",
+                  "question_short": "Equipe envolvida"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Team involved"
+          },
+          {
+            "uuid": "4913fcfc-a29b-420d-b66c-f5b274f40fa0",
+            "logic": {
+              "next_key": -1,
+              "prev_key": 2,
+              "question_key": 3
+            },
+            "choices": [
+              {
+                "label": "Yes",
+                "value": true
+              },
+              {
+                "label": "No",
+                "value": false
+              }
+            ],
+            "question": "Is the pull request reviewed?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "choices": [
+                    {
+                      "label": "Sí",
+                      "value": true
+                    },
+                    {
+                      "label": "No",
+                      "value": false
+                    }
+                  ],
+                  "question": "¿Se revisó la pull request?",
+                  "question_short": "Revisión de PR"
+                },
+                "pt": {
+                  "choices": [
+                    {
+                      "label": "Sim",
+                      "value": true
+                    },
+                    {
+                      "label": "Não",
+                      "value": false
+                    }
+                  ],
+                  "question": "O pull request foi revisado?",
+                  "question_short": "Revisão de PR"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "boolean",
+            "question_short": "PR review"
+          }
+        ],
+        "version": 8,
+        "has_conditional_questions": false
+      },
+      "has_conditional_questions": false,
+      "has_questions_variations": false,
+      "intro": "",
+      "outro": "",
+      "i18n_meta": {
+        "es": {
+          "name": "Lanzamiento de código",
+          "description": "Usa esta plantilla para estructurar tus próximos lanzamientos de código."
+        },
+        "pt": {
+          "name": "Lançamento de código",
+          "description": "Execute este modelo para estruturar seus próximos lançamentos de código."
+        }
+      },
+      "metadata": {
+        "has_special_vars": false
+      },
+      "show_all_blockers": true,
+      "category": null,
+      "emoji_url": "https://d2e7nn6oh5ucns.cloudfront.net/images/template_icons/emoji_code_release@2x.png",
+      "skill_type": "forms",
+      "frequency_type": "weekly",
+      "frequency": 1,
+      "frequency_on_days": "[\"1\"]",
+      "created_at": "2021-06-20T01:56:43.963Z",
+      "updated_at": "2023-03-23T22:07:50.583Z",
+      "last_updated_by": null
+    }
+  }
+]

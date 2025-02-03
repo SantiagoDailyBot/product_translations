@@ -1,0 +1,128 @@
+[
+  {
+    "model": "followups.template",
+    "pk": "50473ed8-a264-4508-90a2-39c01c20fe6d",
+    "fields": {
+      "organization": null,
+      "system_default": true,
+      "owner": null,
+      "name": "Introducing yourself",
+      "description": "It allows you to capture a quick snapshot of newcomers to the team with three simple questions.",
+      "archived": false,
+      "questions": {
+        "fields": [
+          {
+            "uuid": "accabc3c-c891-4197-9a0d-f5dc3870ad39",
+            "logic": {
+              "next_key": 1,
+              "prev_key": -1,
+              "question_key": 0
+            },
+            "question": "Introduce yourself with your name and brief story?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "¿Preséntate con tu nombre y una breve historia?",
+                  "question_short": "Introducción"
+                },
+                "pt": {
+                  "question": "Apresente-se com seu nome e uma breve história?",
+                  "question_short": "Introdução"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Introduction"
+          },
+          {
+            "uuid": "94716086-d97d-4506-8380-26c506cd0511",
+            "logic": {
+              "next_key": 2,
+              "prev_key": 0,
+              "question_key": 1
+            },
+            "question": "What contribution will you make to our team?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "¿Qué contribución harás a nuestro equipo?",
+                  "question_short": "Mi contribución"
+                },
+                "pt": {
+                  "question": "Que contribuição você fará para nossa equipe?",
+                  "question_short": "Minha contribuição"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "My contribution"
+          },
+          {
+            "uuid": "616d00a7-b58d-40ad-b47a-5faac3fa28b1",
+            "logic": {
+              "next_key": -1,
+              "prev_key": 1,
+              "question_key": 2
+            },
+            "question": "What are your hobbies? Feel free to share any random fact about you, too 😊",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": true,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "¿Cuáles son tus hobbies? Siéntete libre de compartir cualquier hecho aleatorio sobre ti también 😊",
+                  "question_short": "Pasatiempos / Hechos aleatorios"
+                },
+                "pt": {
+                  "question": "Quais são seus hobbies? Sinta-se à vontade para compartilhar qualquer fato aleatório sobre você também 😊",
+                  "question_short": "Hobbies / Fatos aleatórios"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Hobbies / Random facts"
+          }
+        ],
+        "version": 5,
+        "has_conditional_questions": false
+      },
+      "has_conditional_questions": false,
+      "has_questions_variations": false,
+      "intro": "\"Introducing yourself\" is a form designed for the onboarding process so that all other team members can get to know you better.",
+      "outro": "",
+      "i18n_meta": {
+        "es": {
+          "name": "Preséntate al equipo",
+          "description": "Permite capturar una fotografía rápida de los que recién entran al equipo con tres simples preguntas."
+        },
+        "pt": {
+          "name": "Apresentação pessoal",
+          "description": "Este formulário permite capturar uma rápida visão geral dos novos membros da equipe com três perguntas simples."
+        }
+      },
+      "metadata": {
+        "has_special_vars": false
+      },
+      "show_all_blockers": true,
+      "category": null,
+      "emoji_url": "https://uploads-ssl.webflow.com/5f454f5b1ec3949c1416957f/62fd1e935ff2caadd90d7f60_demo_request%402x.png",
+      "skill_type": "forms",
+      "frequency_type": "weekly",
+      "frequency": 1,
+      "frequency_on_days": "[\"1\"]",
+      "created_at": "2021-06-20T01:56:43.963Z",
+      "updated_at": "2023-03-23T22:10:55.070Z",
+      "last_updated_by": null
+    }
+  }
+]

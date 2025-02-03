@@ -1,0 +1,128 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "94d52660-302b-45fd-9d03-76bf99042205",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Team meeting agenda",
+            "description": "This check-in will help leaders document their team meeting agenda ahead of their conversation.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "ff744a42-8911-498f-8902-60dff43349fa",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "What would you like to discuss in this meeting?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Qué te gustaría discutir en esta reunión?",
+                                    "question_short": "Motivo de reunión"
+                                },
+                                "pt": {
+                                    "question": "O que você gostaria de discutir nesta reunião?",
+                                    "question_short": "Motivo da reunião"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Reason for meeting"
+                    },
+                    {
+                        "uuid": "15fbd7a3-f646-4cd2-9a8a-45c3f6b11494",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "Current status of related tasks (on track, in progress, blockers):",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Estado de tareas relacionadas (en progreso, bloqueos, etc.):",
+                                    "question_short": "Estado de tareas relacionadas"
+                                },
+                                "pt": {
+                                    "question": "Status de tarefas relacionadas (em andamento, bloqueios, etc.):",
+                                    "question_short": "Status de tarefas relacionadas"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Status of related tasks"
+                    },
+                    {
+                        "uuid": "442a50db-7334-4b08-92e5-b7cc73913fbe",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "question": "Anything else you'd like to share?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Algo más que quieras compartir?",
+                                    "question_short": "Comentarios"
+                                },
+                                "pt": {
+                                    "question": "Mais alguma coisa que você gostaria de compartilhar?",
+                                    "question_short": "Comentários"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Comments"
+                    }
+                ],
+                "version": 9,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Agenda de reunión de equipo",
+                    "description": "Esta plantilla ayudará a los líderes a documentar la agenda de una reunión con su equipo antes de su conversación."
+                },
+                "pt": {
+                    "name": "Pauta de reunião da equipe",
+                    "description": "Este check-in ajudará os líderes a documentar a pauta de sua reunião de equipe antes da conversa."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": false,
+            "category": 3,
+            "emoji_url": "https://uploads-ssl.webflow.com/5f454f5b1ec3949c1416957f/62fd1e934a1992b6830bd066_team_meeting_agendas%402x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-09T03:06:04.734Z",
+            "updated_at": "2023-03-23T22:15:44.475Z",
+            "last_updated_by": null
+        }
+    }
+]

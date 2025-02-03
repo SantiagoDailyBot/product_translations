@@ -1,0 +1,283 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "303efc41-a5a3-423b-9270-9e8e1a8716d7",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Program experience feedback",
+            "description": "A survey for startups to share all their feedback about their experience with the cohort and the program overall",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "878fa2ab-6a52-44af-b238-002622aea4be",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "choices": [
+                            {
+                                "label": "Yes",
+                                "value": true,
+                                "placeholder": "Yes"
+                            },
+                            {
+                                "label": "No",
+                                "value": false,
+                                "placeholder": "No"
+                            }
+                        ],
+                        "question": "Would you recommend the program to other people?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Sí",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "No",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "¿Recomendarías el programa a otras personas?",
+                                    "question_short": "¿Recomendaría el programa?"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Sim",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "Não",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "Você recomendaria o programa para outras pessoas?",
+                                    "question_short": "Você recomendaria o programa?"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "boolean",
+                        "question_short": "Would you recommend the program?"
+                    },
+                    {
+                        "uuid": "90a25b31-0564-4f42-a66b-d5b4cc9fa42e",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "choices": [
+                            {
+                                "label": "Yes",
+                                "value": true
+                            },
+                            {
+                                "label": "No",
+                                "value": false
+                            }
+                        ],
+                        "question": "Did you receive the insights you were expecting when you signed up?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Sí",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "No",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "¿Recibiste los conocimientos que esperabas cuando te registraste?",
+                                    "question_short": "Conocimiento"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Sim",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "Não",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "Você recebeu os insights que esperava quando se inscreveu?",
+                                    "question_short": "Insights"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "boolean",
+                        "question_short": "Insights"
+                    },
+                    {
+                        "uuid": "c31d9925-e77e-4f61-af0d-e2ab088744d3",
+                        "logic": {
+                            "next_key": 3,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "choices": [
+                            {
+                                "label": "5 - Very satisfied",
+                                "value": "5-very-satisfied"
+                            },
+                            {
+                                "label": "4 - Satisfied",
+                                "value": "4-satisfied"
+                            },
+                            {
+                                "label": "3 - Neither",
+                                "value": "3-neither"
+                            },
+                            {
+                                "label": "2 - Dissatisfied",
+                                "value": "2-dissatisfied"
+                            },
+                            {
+                                "label": "1 - Very dissatisfied",
+                                "value": "1-very-dissatisfied"
+                            }
+                        ],
+                        "question": "What is your overall satisfaction with the program?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "5 - Muy Satisfecho/a",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "label": "4 - Satisfecho/a",
+                                            "value": "4"
+                                        },
+                                        {
+                                            "label": "3 - Neutral",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "label": "2 - Insatisfecho/a",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "label": "1 - Muy insatisfecho/a",
+                                            "value": "1"
+                                        }
+                                    ],
+                                    "question": "¿Cuál es tu satisfacción general con el programa?",
+                                    "question_short": "Satisfacción general"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "5 - Muito satisfeito(a",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "label": "4 - Satisfeito(a",
+                                            "value": "4"
+                                        },
+                                        {
+                                            "label": "3 - Nenhum",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "label": "2 - Insatisfeito(a",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "label": "1 - Muito Insatisfeito(a",
+                                            "value": "1"
+                                        }
+                                    ],
+                                    "question": "Qual é a sua satisfação geral com o programa?",
+                                    "question_short": "Satisfação geral"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "multiple_choice",
+                        "question_short": "Overall satisfaction"
+                    },
+                    {
+                        "uuid": "669e2801-3d46-4400-b24f-67f6c84eca22",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 2,
+                            "question_key": 3
+                        },
+                        "question": "Any other comments?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Algún otro comentario?",
+                                    "question_short": "Comentarios"
+                                },
+                                "pt": {
+                                    "question": "Algum outro comentário?",
+                                    "question_short": "Comentários"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Comments"
+                    }
+                ],
+                "version": 8,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Comentarios sobre la experiencia del programa",
+                    "description": "Una encuesta para que las nuevas empresas compartan todos sus comentarios sobre su experiencia con el programa en general."
+                },
+                "pt": {
+                    "name": "Feedback da experiência do programa",
+                    "description": "Uma pesquisa para startups compartilharem todo o seu feedback sobre sua experiência com a turma e o programa como um todo."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 3,
+            "emoji_url": "https://d1d3uvgqmu38d0.cloudfront.net/static/templates_icons/program_experience_feedback@2x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-10T01:00:35.883Z",
+            "updated_at": "2023-03-23T22:14:11.978Z",
+            "last_updated_by": null
+        }
+    }
+]

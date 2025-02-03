@@ -1,0 +1,296 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "974de50a-1ea9-4334-ba29-87d95eeae899",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Vendor termination",
+            "description": "When your team is done with a vendor let your security team know as a best security practice.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "8f1c628f-9314-43bb-b085-046134a80dab",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "Vendor name:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Nombre del proveedor:",
+                                    "question_short": "Nombre del proveedor"
+                                },
+                                "pt": {
+                                    "question": "Nome do fornecedor:",
+                                    "question_short": "Nome do fornecedor"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Vendor name"
+                    },
+                    {
+                        "uuid": "51738757-62f2-4531-a974-91ce110b8df2",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "Reason for termination:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Motivo de terminación:",
+                                    "question_short": "Motivo de terminación"
+                                },
+                                "pt": {
+                                    "question": "Motivo da rescisão:",
+                                    "question_short": "Motivo da rescisão"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Reason for termination"
+                    },
+                    {
+                        "uuid": "a1577ac1-6dc4-494f-8fef-700c2e9305bf",
+                        "logic": {
+                            "next_key": 3,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "choices": [
+                            {
+                                "label": "Yes",
+                                "value": true
+                            },
+                            {
+                                "label": "No",
+                                "value": false
+                            }
+                        ],
+                        "question": "Do we need to finish a subscription?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Sí",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "No",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "¿Necesitamos terminar una suscripción?:",
+                                    "question_short": "Requiere terminación de suscripción"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Sim",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "Não",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "Precisamos terminar uma assinatura?:",
+                                    "question_short": "Requer rescisão de assinatura"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "boolean",
+                        "question_short": "Requires subscription termination"
+                    },
+                    {
+                        "uuid": "9078a466-a1be-400f-91c3-39288070bee2",
+                        "logic": {
+                            "next_key": 4,
+                            "prev_key": 2,
+                            "question_key": 3
+                        },
+                        "choices": [
+                            {
+                                "label": "Yes",
+                                "value": true
+                            },
+                            {
+                                "label": "No",
+                                "value": false
+                            }
+                        ],
+                        "question": "Does it require a change in our DPA?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Sí",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "No",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "¿Requiere un cambio en nuestro DPA?:",
+                                    "question_short": "Requiere cambio en DPA"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Sim",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "Não",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "Requer uma mudança em nosso DPA?:",
+                                    "question_short": "Requer mudança em DPA?"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "boolean",
+                        "question_short": "Requires change in DPA"
+                    },
+                    {
+                        "uuid": "07ecc0bc-2045-4648-842f-8edbd6084bbd",
+                        "logic": {
+                            "next_key": 5,
+                            "prev_key": 3,
+                            "question_key": 4
+                        },
+                        "question": "Is there any procedure to complete? E.g. Form or data deletion request:",
+                        "is_hidden": false,
+                        "is_blocker": true,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Hay algún procedimiento para completar? ¿Algún formulario o solicitud de borrado de datos?:",
+                                    "question_short": "Procedimiento pendiente"
+                                },
+                                "pt": {
+                                    "question": "Existe algum procedimento para concluir? Algum formato ou solicitação de exclusão de dados?:",
+                                    "question_short": "Procedimento pendente"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Pending procedure"
+                    },
+                    {
+                        "uuid": "ca5caf16-4126-41ad-aa63-3f6bbb9d2d7f",
+                        "logic": {
+                            "next_key": 6,
+                            "prev_key": 4,
+                            "question_key": 5
+                        },
+                        "question": "Effective date of termination:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Fecha efectiva de terminación:",
+                                    "question_short": "Fecha de terminación"
+                                },
+                                "pt": {
+                                    "question": "Data efetiva de rescisão:",
+                                    "question_short": "Data de rescisão"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Date of termination"
+                    },
+                    {
+                        "uuid": "852cf460-e6fe-45cb-8342-1825893f7410",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 5,
+                            "question_key": 6
+                        },
+                        "question": "Will it be replaced with some other vendor? If so, which one?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Será reemplazado por algún otro proveedor? ¿Cuál?",
+                                    "question_short": "Reemplazo"
+                                },
+                                "pt": {
+                                    "question": "Será substituído por algum outro fornecedor? Qual deles?",
+                                    "question_short": "Substituição"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Replacement"
+                    }
+                ],
+                "version": 9,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Terminar proveedor",
+                    "description": "Cuando su equipo haya terminado la relación con un proveedor, informe a su equipo de seguridad como una buena práctica de seguridad."
+                },
+                "pt": {
+                    "name": "Encerramento de fornecedor",
+                    "description": "Quando sua equipe terminar com um fornecedor, informe sua equipe de segurança como uma melhor prática de segurança."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": false,
+            "category": 2,
+            "emoji_url": "https://d1d3uvgqmu38d0.cloudfront.net/static/templates_icons/vendor_termination@2x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-09T14:35:50.776Z",
+            "updated_at": "2023-03-23T22:20:03.902Z",
+            "last_updated_by": null
+        }
+    }
+]

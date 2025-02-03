@@ -1,0 +1,231 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "9b273726-1b23-4c68-8d76-747659ec2391",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "eNPS Survey",
+            "description": "Track your Employer Net Promoter Score over time.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "e10a2ca4-8003-406e-9e10-ca74d240aed5",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "choices": [
+                            {
+                                "label": "10 - Extremely likely",
+                                "value": "10-extremely-likely"
+                            },
+                            {
+                                "label": "9",
+                                "value": "9"
+                            },
+                            {
+                                "label": "8",
+                                "value": "8"
+                            },
+                            {
+                                "label": "7",
+                                "value": "7"
+                            },
+                            {
+                                "label": "6",
+                                "value": "6"
+                            },
+                            {
+                                "label": "5",
+                                "value": "5"
+                            },
+                            {
+                                "label": "4",
+                                "value": "4"
+                            },
+                            {
+                                "label": "3",
+                                "value": "3"
+                            },
+                            {
+                                "label": "2",
+                                "value": "2"
+                            },
+                            {
+                                "label": "1 - Not at all likely",
+                                "value": "1-not-at-all-likely"
+                            }
+                        ],
+                        "question": "On a scale from 1-10, how likely are you to refer working in our company to a friend or colleague? (1 being not at all likely and 10 extremely likely)",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "10 - Extremadamente probable",
+                                            "value": "10-extremadamente-probable"
+                                        },
+                                        {
+                                            "label": "9",
+                                            "value": "9"
+                                        },
+                                        {
+                                            "label": "8",
+                                            "value": "8"
+                                        },
+                                        {
+                                            "label": "7",
+                                            "value": "7"
+                                        },
+                                        {
+                                            "label": "6",
+                                            "value": "6"
+                                        },
+                                        {
+                                            "label": "5",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "label": "4",
+                                            "value": "4"
+                                        },
+                                        {
+                                            "label": "3",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "label": "2",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "label": "1 - Nada probable",
+                                            "value": "1-nada-probable"
+                                        }
+                                    ],
+                                    "question": "En una escala del 1 al 10, ¿qué probabilidad hay de que recomiendes trabajar en nuestra empresa a un amigo o colega? (1 es nada probable y 10 extremadamente probable)",
+                                    "question_short": "Puntaje eNPS"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "10 - Extremamente provável",
+                                            "value": "10-extremamente-provavel"
+                                        },
+                                        {
+                                            "label": "9",
+                                            "value": "9"
+                                        },
+                                        {
+                                            "label": "8",
+                                            "value": "8"
+                                        },
+                                        {
+                                            "label": "7",
+                                            "value": "7"
+                                        },
+                                        {
+                                            "label": "6",
+                                            "value": "6"
+                                        },
+                                        {
+                                            "label": "5",
+                                            "value": "5"
+                                        },
+                                        {
+                                            "label": "4",
+                                            "value": "4"
+                                        },
+                                        {
+                                            "label": "3",
+                                            "value": "3"
+                                        },
+                                        {
+                                            "label": "2",
+                                            "value": "2"
+                                        },
+                                        {
+                                            "label": "1 - Nada provável",
+                                            "value": "1-nada-provavel"
+                                        }
+                                    ],
+                                    "question": "Em uma escala de 1 a 10, qual é a probabilidade de você referir o trabalho em nossa empresa a um amigo ou colega? (1 sendo nada provável e 10 extremamente provável)",
+                                    "question_short": "Pontuação eNPS"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "multiple_choice",
+                        "question_short": "eNPS Score"
+                    },
+                    {
+                        "uuid": "fc7292ab-eed6-43d5-8b6f-db69ea0c1504",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "Can you tell us why you chose the number above?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Puedes decirnos por qué elegiste el número anterior?",
+                                    "question_short": "Razón del puntaje"
+                                },
+                                "pt": {
+                                    "question": "Você pode nos dizer por que escolheu o número acima?",
+                                    "question_short": "Razão da pontuação"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Reason for the score"
+                    }
+                ],
+                "version": 7,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "",
+            "outro": "",
+            "i18n_meta": {
+                "en": {
+                    "name": "eNPS Survey",
+                    "description": "Track your Employer Net Promoter Score over time."
+                },
+                "es": {
+                    "name": "Encuesta eNPS",
+                    "description": "Realice un seguimiento de su Employer Net Promoter Score en el tiempo."
+                },
+                "pt": {
+                    "name": "Enquete eNPS",
+                    "description": "Acompanhe sua pontuação líquida de promotores do empregador ao longo do tempo."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 4,
+            "emoji_url": "https://d2e7nn6oh5ucns.cloudfront.net/images/template_icons/emoji_eNPS@2x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"3\"]",
+            "created_at": "2022-01-07T20:54:50.059Z",
+            "updated_at": "2023-03-24T23:57:43.319Z",
+            "last_updated_by": null
+        }
+    }
+]

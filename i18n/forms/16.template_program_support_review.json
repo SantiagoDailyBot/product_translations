@@ -1,0 +1,212 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "42c36180-4ea8-493f-b97e-a6686c27cffb",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Program support review",
+            "description": "The perfect survey to assess the progress of your startup and the impact of the program.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "9514eea6-dad3-4388-a475-7421d927f87b",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "How helpful has the program been in moving you toward your goals?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Qué tan útil ha sido el programa para encaminarte hacia tus metas?",
+                                    "question_short": "¿Qué tan útil ha sido el programa?"
+                                },
+                                "pt": {
+                                    "question": "Quão útil o programa tem sido para movê-lo em direção aos seus objetivos?",
+                                    "question_short": "Quão útil o programa tem sido?"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "How helpful has the program been?"
+                    },
+                    {
+                        "uuid": "9a780e9c-c6f1-4dec-a25a-7c6e6ddedc61",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "choices": [
+                            {
+                                "label": "Yes",
+                                "value": true
+                            },
+                            {
+                                "label": "No",
+                                "value": false
+                            }
+                        ],
+                        "question": "Were you given clear actions to complete?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Sí",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "No",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "¿Tuviste siempre acciones claras para completar?",
+                                    "question_short": "Instrucciones claras"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Sim",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "Não",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "Você recebeu ações claras para concluir o tempo todo?",
+                                    "question_short": "Instruções claras"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "boolean",
+                        "question_short": "Instructions were clear?"
+                    },
+                    {
+                        "uuid": "cb315ded-6498-40f6-81e9-e3bfe65a6707",
+                        "logic": {
+                            "next_key": 3,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "question": "Has your revenue increased, and if so, what’s the % increase?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Han aumentado sus ingresos? De ser así, ¿cuál es el porcentaje de aumento?",
+                                    "question_short": "¿Han aumentado sus ingresos?"
+                                },
+                                "pt": {
+                                    "question": "Sua receita aumentou e, em caso afirmativo, qual é o % de aumento?",
+                                    "question_short": "Sua receita aumentou?"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "numeric",
+                        "question_short": "Has revenue increased?"
+                    },
+                    {
+                        "uuid": "c7a24299-b23a-4a12-b822-bfde3a89ab2f",
+                        "logic": {
+                            "next_key": 4,
+                            "prev_key": 2,
+                            "question_key": 3
+                        },
+                        "question": "Have you hired any employees, and if so, how many?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Has contratado a algún empleado, y si es así, cuántos?",
+                                    "question_short": "¿Has contratado a algún empleado?"
+                                },
+                                "pt": {
+                                    "question": "Você contratou algum funcionário e, em caso afirmativo, quantos?",
+                                    "question_short": "Você contratou algum funcionário?"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "numeric",
+                        "question_short": "Have you hired employees?"
+                    },
+                    {
+                        "uuid": "d7837181-36d8-4e33-8e11-fa34869dcb3f",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 3,
+                            "question_key": 4
+                        },
+                        "question": "What is a success story you would like to share?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Cuál es una historia de éxito que le gustaría compartir?",
+                                    "question_short": "Historia de éxito"
+                                },
+                                "pt": {
+                                    "question": "Qual é uma história de sucesso que você gostaria de compartilhar?",
+                                    "question_short": "História de sucesso"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Success story"
+                    }
+                ],
+                "version": 10,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "This form requests feedback from your accelerator or incubator program participants",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Revisión de impacto del programa",
+                    "description": "La encuesta perfecta para evaluar el progreso de tu startup y el impacto del programa."
+                },
+                "pt": {
+                    "name": "Avaliação do suporte do programa",
+                    "description": "A pesquisa perfeita para avaliar o progresso de sua startup e o impacto do programa."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": false,
+            "category": 4,
+            "emoji_url": "https://uploads-ssl.webflow.com/5f454f5b1ec3949c1416957f/62fd1e931c8b0e5c1dd38003_program_support_review%402x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-10T00:57:00.532Z",
+            "updated_at": "2023-03-23T22:14:40.090Z",
+            "last_updated_by": null
+        }
+    }
+]

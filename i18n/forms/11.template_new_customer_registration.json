@@ -1,0 +1,263 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "221c39b3-3284-4696-bf21-56b09068d651",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "New customer registration",
+            "description": "Did your team get a new customer? Registered it with this form.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "59d102e1-c76f-4ea8-96e9-054507b4b3bb",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "Company/organization name:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Nombre de la empresa u organización:",
+                                    "question_short": "Nombre de la empresa/org"
+                                },
+                                "pt": {
+                                    "question": "Nome da companhia ou organização:",
+                                    "question_short": "Nome da companhia/org"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Company/org name"
+                    },
+                    {
+                        "uuid": "e577314e-f5e9-4ed9-9616-ac1ce5786498",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "Registration number:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Número de registro:",
+                                    "question_short": "Número de registro"
+                                },
+                                "pt": {
+                                    "question": "Número de registro:",
+                                    "question_short": "Número de registro"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "numeric",
+                        "question_short": "Registration number"
+                    },
+                    {
+                        "uuid": "2b947787-06cd-4069-8f8c-5a663546aa98",
+                        "logic": {
+                            "next_key": 3,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "question": "Contact full name:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Nombre completo del contacto:",
+                                    "question_short": "Nombre de contacto"
+                                },
+                                "pt": {
+                                    "question": "Nome completo do contato:",
+                                    "question_short": "Nome de contato"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Contact name"
+                    },
+                    {
+                        "uuid": "f30997e6-368b-4231-9669-6905ae72d8cb",
+                        "logic": {
+                            "next_key": 4,
+                            "prev_key": 2,
+                            "question_key": 3
+                        },
+                        "question": "Address:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Dirección:",
+                                    "question_short": "Dirección"
+                                },
+                                "pt": {
+                                    "question": "Endereço:",
+                                    "question_short": "Endereço"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Address"
+                    },
+                    {
+                        "uuid": "868abbae-ffa8-4a1f-b181-cf4111ad6ff1",
+                        "logic": {
+                            "next_key": 5,
+                            "prev_key": 3,
+                            "question_key": 4
+                        },
+                        "question": "Email:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Correo electrónico:",
+                                    "question_short": "correo electrónico"
+                                },
+                                "pt": {
+                                    "question": "Correio eletrônico:",
+                                    "question_short": "Correio eletrônico"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Email"
+                    },
+                    {
+                        "uuid": "db66edd8-d913-4fed-b2f0-05537e7927c1",
+                        "logic": {
+                            "next_key": 6,
+                            "prev_key": 4,
+                            "question_key": 5
+                        },
+                        "question": "Telephone:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Teléfono:",
+                                    "question_short": "Teléfono"
+                                },
+                                "pt": {
+                                    "question": "Telefone:",
+                                    "question_short": "Telefone"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Telephone"
+                    },
+                    {
+                        "uuid": "79c296c6-1fb9-42ba-9d68-e45956e117b8",
+                        "logic": {
+                            "next_key": 7,
+                            "prev_key": 5,
+                            "question_key": 6
+                        },
+                        "question": "Country of HQ:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "País de la sede:",
+                                    "question_short": "País de la sede"
+                                },
+                                "pt": {
+                                    "question": "País da sede:",
+                                    "question_short": "País da sede"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Country of HQ"
+                    },
+                    {
+                        "uuid": "ef38575f-3bd3-48cb-b15d-9d39ee1dedec",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 6,
+                            "question_key": 7
+                        },
+                        "question": "Number of employees:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Número de empleados:",
+                                    "question_short": "Número de empleados"
+                                },
+                                "pt": {
+                                    "question": "Número de empregados:",
+                                    "question_short": "Número de empregados"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Number of employees"
+                    }
+                ],
+                "version": 7,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "This form lets sales agents and account managers record the basic information for new customers",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Registro de nuevo cliente",
+                    "description": "¿Tu equipo consiguió un nuevo cliente? Registrado con este formulario."
+                },
+                "pt": {
+                    "name": "Registro de novo cliente",
+                    "description": "Sua equipe conseguiu um novo cliente? Registre-o com este formulário."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 3,
+            "emoji_url": "https://d1d3uvgqmu38d0.cloudfront.net/static/templates_icons/new_customer_registration@2x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-09T14:52:23.700Z",
+            "updated_at": "2023-03-23T22:12:10.259Z",
+            "last_updated_by": null
+        }
+    }
+]

@@ -1,0 +1,101 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "38a11739-6c9f-4381-93fc-7193f2bb1d67",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Whistleblower report",
+            "description": "Did you witness practices at work that you believe to be out of compliance with our security practices? This is anonymous!",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "280106da-7284-4a8b-98f1-27911477316c",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "Who's involved in your finding?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Quién esta involucrado en tus hallazgos?",
+                                    "question_short": "Personas involucradas"
+                                },
+                                "pt": {
+                                    "question": "Quem esta emvolvido em suas descobertas?",
+                                    "question_short": "Pessoas envolvidas"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "People involved"
+                    },
+                    {
+                        "uuid": "35fd5497-c329-4592-aff1-79535921f263",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "What did you find out?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Qué encontraste?",
+                                    "question_short": "Hallazgos"
+                                },
+                                "pt": {
+                                    "question": "O que você encontrou?",
+                                    "question_short": "Constatações"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Findings"
+                    }
+                ],
+                "version": 9,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Denunciar",
+                    "description": "¿Fuíste testigo de prácticas en el trabajo que crees que no cumplen con nuestras prácticas de seguridad? ¡Esto es anónimo!"
+                },
+                "pt": {
+                    "name": "Relatório de denúncia",
+                    "description": "Você testemunhou práticas no trabalho que acredita estar em desacordo com nossas práticas de segurança? Isso é anônimo!"
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 2,
+            "emoji_url": "https://d1d3uvgqmu38d0.cloudfront.net/static/templates_icons/whistleblower@2x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-09T04:21:33.953Z",
+            "updated_at": "2023-03-23T22:20:43.727Z",
+            "last_updated_by": null
+        }
+    }
+]

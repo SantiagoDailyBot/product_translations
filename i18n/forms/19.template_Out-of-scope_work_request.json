@@ -1,0 +1,219 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "36775d51-b561-4724-9dbd-63bb00a7a2d9",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Out-of-scope work request",
+            "description": "Need work that is not part of your monthly contract? That's okay, complete this form and make an out-of-scope request.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "5b060666-8b96-4a87-9995-97ff309a3002",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "Please describe the type of work that requires an “out-of-scope” treatment:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Describa el tipo de trabajo que requiere un tratamiento como fuera de contrato:",
+                                    "question_short": "Tipo de trabajo"
+                                },
+                                "pt": {
+                                    "question": "Descrever o tipo de trabalho que requer tratamento como fora do contrato:",
+                                    "question_short": "Tipo de trabalho"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Type of work"
+                    },
+                    {
+                        "uuid": "a2448a4b-17eb-4833-845b-2cb1d5f62d64",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "By what date do you need the work done?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Para qué fecha necesita el trabajo completado?:",
+                                    "question_short": "Fecha de entrega"
+                                },
+                                "pt": {
+                                    "question": "Até que data você precisa do trabalho concluído?:",
+                                    "question_short": "Data de entrega"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Date of delivery"
+                    },
+                    {
+                        "uuid": "c304b6e3-b8f8-4b06-98ff-a3f540f0f059",
+                        "logic": {
+                            "next_key": 3,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "choices": [
+                            {
+                                "label": "Yes",
+                                "value": true,
+                                "placeholder": "Yes"
+                            },
+                            {
+                                "label": "No",
+                                "value": false,
+                                "placeholder": "No"
+                            }
+                        ],
+                        "question": "Did your account manager share with you the extra cost of this “out-of-scope” work?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Sí",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "No",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "¿Tu gerente de cuenta compartió el costo extra de este trabajo fuera de contrato?:",
+                                    "question_short": "Costo compartido del administrador de cuentas"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Sim",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "Não",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "Seu gerente de conta compartilhou o custo extra desse trabalho fora do contrato?:",
+                                    "question_short": "Custo compartilhado pelo gerente de contas"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "boolean",
+                        "question_short": "Acc manager shared cost"
+                    },
+                    {
+                        "uuid": "fd5b333f-9d57-4c9d-a9b0-8e0a8d36da14",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 2,
+                            "question_key": 3
+                        },
+                        "choices": [
+                            {
+                                "label": "Yes",
+                                "value": true,
+                                "placeholder": "Yes"
+                            },
+                            {
+                                "label": "No",
+                                "value": false,
+                                "placeholder": "No"
+                            }
+                        ],
+                        "question": "Please select “yes” if you understand that this work is not part of the monthly retainer and we might have to charge extra hours for this:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Sí",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "No",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "Selecciona “Si” si entiende que este trabajo no es parte del contrato mensual y tendrá un costo extra:",
+                                    "question_short": "Aceptación"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Sim",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "Não",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "Selecione “Sim” se entender que este trabalho não faz parte do contrato mensal e terá um custo extra:",
+                                    "question_short": "Aceitação"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "boolean",
+                        "question_short": "Agreement"
+                    }
+                ],
+                "version": 8,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "This form is to be used when there is a need to commission the development of a task outside the initial agreed scope, please answer the following:",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Solicitud fuera de contrato",
+                    "description": "¿Necesitas un trabajo realizado que no forma parte del contrato mensual? Está bien, completa este formulario y haz una solicitud fuera de contrato."
+                },
+                "pt": {
+                    "name": "Solicitação de trabalho fora do escopo",
+                    "description": "Precisa de trabalho que não faz parte do seu contrato mensal? Tudo bem, preencha este formulário e faça uma solicitação fora do escopo."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 2,
+            "emoji_url": "https://d1d3uvgqmu38d0.cloudfront.net/static/templates_icons/out_of_scope_work@2x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-09T03:31:32.855Z",
+            "updated_at": "2023-03-23T22:12:57.669Z",
+            "last_updated_by": null
+        }
+    }
+]

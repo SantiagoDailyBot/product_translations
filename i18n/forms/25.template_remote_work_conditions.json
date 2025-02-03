@@ -1,0 +1,128 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "dcd63258-2b71-4af7-a493-80a4dd0943c2",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Remote work conditions",
+            "description": "The perfect check-in for team leaders to understand the remote work conditions of their teammates.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "436abd42-60b7-4bd1-90bb-3bb01600d172",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "Have you observed anything that could be improved to facilitate your remote work conditions? Please describe:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Has observado algo que podría mejorarse para facilitar tu trabajo remoto? Explica:",
+                                    "question_short": "Condiciones de trabajo remoto"
+                                },
+                                "pt": {
+                                    "question": "Você observou algo que poderia ser melhorado para facilitar seu trabalho remoto? Por favor explique:",
+                                    "question_short": "Condições de trabalho remoto"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Remote work conditions"
+                    },
+                    {
+                        "uuid": "6894d5d2-84a1-4af8-b0da-c5f3c32f190b",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "Do you have any suggestions for improving remote work performance that have been overlooked?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Tienes alguna sugerencia para mejorar el desempeño del trabajo remoto que se haya pasado por alto?:",
+                                    "question_short": "Sugerencias de desempeño"
+                                },
+                                "pt": {
+                                    "question": "Você tem alguma sugestão para melhorar o desempenho do trabalho remoto que foi negligenciada?:",
+                                    "question_short": "Sugestões de desempenho"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Performance suggestions"
+                    },
+                    {
+                        "uuid": "4441a685-9147-48a4-904c-5079940c9cf2",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "question": "The things we do well about remote work that should be maintained are:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Las cosas que hacemos bien sobre trabajo remoto que deberían mantenerse son:",
+                                    "question_short": "Cosas que hacemos bien"
+                                },
+                                "pt": {
+                                    "question": "As coisas que fazemos bem sobre o trabalho remoto que devem ser mantidas são:",
+                                    "question_short": "Coisas que fazemos bem"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Things we do well"
+                    }
+                ],
+                "version": 13,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "With this tool, you will be able to manage and adjust the process of adaptation and change toward the remote work scene",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Condiciones de trabajo remoto",
+                    "description": "El registro perfecto para que los líderes de equipo comprendan las condiciones de trabajo remoto de sus equipos."
+                },
+                "pt": {
+                    "name": "Condições de trabalho remoto",
+                    "description": "O check-in perfeito para líderes de equipe entenderem as condições de trabalho remoto de seus colegas de equipe."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 5,
+            "emoji_url": "https://uploads-ssl.webflow.com/5f454f5b1ec3949c1416957f/62fd231afb0cd6b4115c132f_remote_work_conditions%402x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 2,
+            "frequency_on_days": "[\"4\"]",
+            "created_at": "2022-08-06T05:57:39.357Z",
+            "updated_at": "2023-03-23T22:15:02.500Z",
+            "last_updated_by": null
+        }
+    }
+]

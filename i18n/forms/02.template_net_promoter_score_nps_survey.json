@@ -1,0 +1,408 @@
+[
+  {
+    "model": "followups.template",
+    "pk": "6dfdfe79-833f-4272-b100-0778b6b173f1",
+    "fields": {
+      "organization": null,
+      "system_default": true,
+      "owner": null,
+      "name": "Net Promoter Score (NPS) survey",
+      "description": "There is a lot to be said for loyalty toward a brand or product. It's important to measure customer loyalty and understand how your customers feel.",
+      "archived": false,
+      "questions": {
+        "fields": [
+          {
+            "uuid": "2d813a18-8447-483f-bf72-70cc40c415f1",
+            "logic": {
+              "next_key": 1,
+              "prev_key": -1,
+              "question_key": 0
+            },
+            "question": "On a scale from 0-10, how likely are you to recommend our company to a friend or colleague? \n(0 being not at all likely and 10 extremely likely)",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "En una escala del 0 al 10, ¿qué probabilidades hay de que recomiendes nuestra empresa a un amigo o colega? \n(0 es nada probable y 10 extremadamente probable)",
+                  "question_short": "Probabilidad de recomendar"
+                },
+                "pt": {
+                  "question": "Em uma escala de 0 a 10, qual a probabilidade de você recomendar nossa empresa a um amigo ou colega? \n(0 não é nem um pouco provável e 10 é extremamente provável)",
+                  "question_short": "Probabilidade de recomendar"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "numeric",
+            "question_short": "Likelihood to recommend"
+          },
+          {
+            "uuid": "06c21fb7-b457-4f08-8cc7-c7483b8d6fd4",
+            "logic": {
+              "next_key": 2,
+              "prev_key": 0,
+              "question_key": 1
+            },
+            "question": "Please tell us why you gave this rating.",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "Por favor cuéntanos por qué otorgaste esa calificación.",
+                  "question_short": "Razón de la calificación"
+                },
+                "pt": {
+                  "question": "Por favor, diga-nos por que você deu essa classificação.",
+                  "question_short": "Razão da classificação"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Reason of score"
+          },
+          {
+            "uuid": "aed75da6-ef6e-4bd8-af86-d8377f15b5c2",
+            "logic": {
+              "next_key": 3,
+              "prev_key": 1,
+              "question_key": 2
+            },
+            "choices": [
+              {
+                "label": "Extremely dissatisfied",
+                "value": "extremely-dissatisfied"
+              },
+              {
+                "label": "Moderately dissatisfied",
+                "value": "moderately-dissatisfied"
+              },
+              {
+                "label": "Neutral",
+                "value": "neutral"
+              },
+              {
+                "label": "Moderately satisfied",
+                "value": "moderately-satisfied"
+              },
+              {
+                "label": "Extremely satisfied",
+                "value": "extremely-satisfied"
+              }
+            ],
+            "question": "How satisfied are you with our product quality?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "choices": [
+                    {
+                      "label": "Extremadamente insatisfecho",
+                      "value": "extremadamente-insatisfecho"
+                    },
+                    {
+                      "label": "Moderadamente insatisfecho",
+                      "value": "moderadamente-insatisfecho"
+                    },
+                    {
+                      "label": "Neutral",
+                      "value": "neutral"
+                    },
+                    {
+                      "label": "Moderadamente satisfecho",
+                      "value": "moderadamente-satisfecho"
+                    },
+                    {
+                      "label": "Extremadamente satisfecho",
+                      "value": "Extremadamente-satisfecho"
+                    }
+                  ],
+                  "question": "¿Qué tan satisfecho estás con la calidad de nuestros productos?",
+                  "question_short": "Satisfacción con la calidad de productos"
+                },
+                "pt": {
+                  "choices": [
+                    {
+                      "label": "Extremamente insatisfeito",
+                      "value": "extremamente-insatisfeito"
+                    },
+                    {
+                      "label": "Moderadamente insatisfeito",
+                      "value": "moderadamente-insatisfeito"
+                    },
+                    {
+                      "label": "Neutral",
+                      "value": "neutral"
+                    },
+                    {
+                      "label": "Moderadamente satisfeito",
+                      "value": "moderadamente-satisfeito"
+                    },
+                    {
+                      "label": "Extremamente satisfeito",
+                      "value": "extremamente-satisfeito"
+                    }
+                  ],
+                  "question": "Quão satisfeito você está com a qualidade dos nossos produtos?",
+                  "question_short": "Satisfação com a qualidade de produtos"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "multiple_choice",
+            "question_short": "Product quality satisfaction"
+          },
+          {
+            "uuid": "9688fc04-29b3-4686-ae2c-5cfcb08f80ff",
+            "logic": {
+              "next_key": 4,
+              "prev_key": 2,
+              "question_key": 3
+            },
+            "choices": [
+              {
+                "label": "Extremely dissatisfied",
+                "value": "extremely-dissatisfied"
+              },
+              {
+                "label": "Moderately dissatisfied",
+                "value": "moderately-dissatisfied"
+              },
+              {
+                "label": "Neutral",
+                "value": "neutral"
+              },
+              {
+                "label": "Moderately satisfied",
+                "value": "moderately-satisfied"
+              },
+              {
+                "label": "Extremely satisfied",
+                "value": "extremely-satisfied"
+              }
+            ],
+            "question": "How satisfied are you with our customer support?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "choices": [
+                    {
+                      "label": "Extremadamente insatisfecho",
+                      "value": "extremadamente-insatisfecho"
+                    },
+                    {
+                      "label": "Moderadamente insatisfecho",
+                      "value": "moderadamente-insatisfecho"
+                    },
+                    {
+                      "label": "Neutral",
+                      "value": "neutral"
+                    },
+                    {
+                      "label": "Moderadamente satisfecho",
+                      "value": "moderadamente-satisfecho"
+                    },
+                    {
+                      "label": "Extremadamente satisfecho",
+                      "value": "Extremadamente-satisfecho"
+                    }
+                  ],
+                  "question": "¿Qué tan satisfecho estás con nuestro servicio de atención al cliente?",
+                  "question_short": "Satisfacción de soporte"
+                },
+                "pt": {
+                  "choices": [
+                    {
+                      "label": "Extremamente insatisfeito",
+                      "value": "extremamente-insatisfeito"
+                    },
+                    {
+                      "label": "Moderadamente insatisfeito",
+                      "value": "moderadamente-insatisfeito"
+                    },
+                    {
+                      "label": "Neutral",
+                      "value": "neutral"
+                    },
+                    {
+                      "label": "Moderadamente satisfeito",
+                      "value": "moderadamente-satisfeito"
+                    },
+                    {
+                      "label": "Extremamente satisfeito",
+                      "value": "extremamente-satisfeito"
+                    }
+                  ],
+                  "question": "Quão satisfeito você está com nosso atendimento ao cliente?",
+                  "question_short": "Satisfação com o suporte"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "multiple_choice",
+            "question_short": "Support satisfaction"
+          },
+          {
+            "uuid": "2b8724c6-3e96-4682-a87a-28ac41a7968a",
+            "logic": {
+              "next_key": 5,
+              "prev_key": 3,
+              "question_key": 4
+            },
+            "choices": [
+              {
+                "label": "Extremely dissatisfied",
+                "value": "extremely-dissatisfied"
+              },
+              {
+                "label": "Moderately dissatisfied",
+                "value": "moderately-dissatisfied"
+              },
+              {
+                "label": "Neutral",
+                "value": "neutral"
+              },
+              {
+                "label": "Moderately satisfied",
+                "value": "moderately-satisfied"
+              },
+              {
+                "label": "Extremely satisfied",
+                "value": "extremely-satisfied"
+              }
+            ],
+            "question": "How satisfied are you with our purchasing experience?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "choices": [
+                    {
+                      "label": "Extremadamente insatisfecho",
+                      "value": "extremadamente-insatisfecho"
+                    },
+                    {
+                      "label": "Moderadamente insatisfecho",
+                      "value": "moderadamente-insatisfecho"
+                    },
+                    {
+                      "label": "Neutral",
+                      "value": "neutral"
+                    },
+                    {
+                      "label": "Moderadamente satisfecho",
+                      "value": "moderadamente-satisfecho"
+                    },
+                    {
+                      "label": "Extremadamente satisfecho",
+                      "value": "Extremadamente-satisfecho"
+                    }
+                  ],
+                  "question": "¿Qué tan satisfecho estás con nuestra experiencia de compra?",
+                  "question_short": "Satisfacción de la experiencia de compra"
+                },
+                "pt": {
+                  "choices": [
+                    {
+                      "label": "Extremamente insatisfeito",
+                      "value": "extremamente-insatisfeito"
+                    },
+                    {
+                      "label": "Moderadamente insatisfeito",
+                      "value": "moderadamente-insatisfeito"
+                    },
+                    {
+                      "label": "Neutral",
+                      "value": "neutral"
+                    },
+                    {
+                      "label": "Moderadamente satisfeito",
+                      "value": "moderadamente-satisfeito"
+                    },
+                    {
+                      "label": "Extremamente satisfeito",
+                      "value": "extremamente-satisfeito"
+                    }
+                  ],
+                  "question": "Quão satisfeito você está com nossa experiência de compra?",
+                  "question_short": "Satisfação com a experiência de compra"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "multiple_choice",
+            "question_short": "Purchasing experience satisfaction"
+          },
+          {
+            "uuid": "615d9d97-b1a3-4c66-8ad3-dc4ff3b7b2b3",
+            "logic": {
+              "next_key": -1,
+              "prev_key": 4,
+              "question_key": 5
+            },
+            "question": "Is there anything specific that our company can do to improve your experience?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "¿Hay algo específico que nuestra empresa pueda hacer para mejorar tu experiencia?",
+                  "question_short": "Comentarios"
+                },
+                "pt": {
+                  "question": "Existe algo específico que nossa empresa pode fazer para melhorar sua experiência?",
+                  "question_short": "Comentários"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Comments"
+          }
+        ],
+        "version": 8,
+        "has_conditional_questions": false
+      },
+      "has_conditional_questions": false,
+      "has_questions_variations": false,
+      "intro": "Please provide feedback by accurately filling in the information below.",
+      "outro": "",
+      "i18n_meta": {
+        "es": {
+          "name": "Encuesta Net Promoter Score (NPS)",
+          "intro": "Envía tus comentarios completando con cuidado la siguiente información.",
+          "description": "Hay mucho que decir sobre la lealtad hacia una marca o producto. Es importante medir la lealtad de los clientes y comprender cómo se sienten."
+        },
+        "pt": {
+          "name": "Pesquisa de pontuação líquida de promotores (NPS)",
+          "description": "Há muito a ser dito sobre a lealdade a uma marca ou produto. É importante medir a lealdade do cliente e entender como seus clientes se sentem."
+        }
+      },
+      "metadata": {
+        "has_special_vars": false
+      },
+      "show_all_blockers": true,
+      "category": null,
+      "emoji_url": "https://d2e7nn6oh5ucns.cloudfront.net/images/template_icons/emoji_net_promoter_score@2x.png",
+      "skill_type": "forms",
+      "frequency_type": "weekly",
+      "frequency": 1,
+      "frequency_on_days": "[\"1\"]",
+      "created_at": "2021-06-20T01:56:43.963Z",
+      "updated_at": "2023-03-23T22:11:45.905Z",
+      "last_updated_by": null
+    }
+  }
+]

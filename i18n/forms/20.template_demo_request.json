@@ -1,0 +1,209 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "678cb30f-d5e2-4bf5-831c-66905e15d1b8",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Demo request",
+            "description": "Is there a new demo request? Make sure you let your team know!",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "046267e5-a8f5-49f4-aa22-3fef0046f931",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "Company/org name:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Nombre de la empresa u organización:",
+                                    "question_short": "Nombre de la empresa/org"
+                                },
+                                "pt": {
+                                    "question": "Nome da companhia ou organização:",
+                                    "question_short": "Nome da companhia/org"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Company/org name"
+                    },
+                    {
+                        "uuid": "76812267-41ef-4f63-829e-007748f00048",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "Contact full name:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Nombre completo del contacto:",
+                                    "question_short": "Nombre del contacto"
+                                },
+                                "pt": {
+                                    "question": "Nome completo do contato:",
+                                    "question_short": "Nome de contato"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Contact full name"
+                    },
+                    {
+                        "uuid": "197554c9-ab58-45b3-a0c2-16eef9dd8699",
+                        "logic": {
+                            "next_key": 3,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "question": "Email:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Correo electrónico:",
+                                    "question_short": "Correo electrónico"
+                                },
+                                "pt": {
+                                    "question": "Correio eletrônico:",
+                                    "question_short": "Correio eletrônico"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Email"
+                    },
+                    {
+                        "uuid": "df69e647-c56a-4c50-8027-fec7772ca685",
+                        "logic": {
+                            "next_key": 4,
+                            "prev_key": 2,
+                            "question_key": 3
+                        },
+                        "question": "Trial start date:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Fecha de inicio del modo de prueba:",
+                                    "question_short": "Fecha de inicio"
+                                },
+                                "pt": {
+                                    "question": "Data de início do modo de teste:",
+                                    "question_short": "Data de início"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Trial start date"
+                    },
+                    {
+                        "uuid": "f3844c62-d602-44f3-9421-428c43735ab9",
+                        "logic": {
+                            "next_key": 5,
+                            "prev_key": 3,
+                            "question_key": 4
+                        },
+                        "question": "Trial expiration date:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Fecha de expiración del modo de prueba:",
+                                    "question_short": "Fecha de expiración"
+                                },
+                                "pt": {
+                                    "question": "Data de expiração do modo de teste:",
+                                    "question_short": "Data de expiração"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Trial expiration date"
+                    },
+                    {
+                        "uuid": "6e6abf0e-eb3b-42b2-9b72-20e0512c70fd",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 4,
+                            "question_key": 5
+                        },
+                        "question": "How many users:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Número de usuarios:",
+                                    "question_short": "Número de usuarios"
+                                },
+                                "pt": {
+                                    "question": "Número de usuários:",
+                                    "question_short": "Número de usuários"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "How many users"
+                    }
+                ],
+                "version": 7,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "This form lets sales agents or vendors ask for a demo or trial activation for a potential customer",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Solicitud de demo",
+                    "description": "¿Hay una nueva solicitud para un demo? ¡Asegúrate de hacérselo saber a tu equipo!"
+                },
+                "pt": {
+                    "name": "Solicitação de demonstração",
+                    "description": "Existe uma nova solicitação de demonstração? Certifique-se de informar sua equipe!"
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 3,
+            "emoji_url": "https://uploads-ssl.webflow.com/5f454f5b1ec3949c1416957f/62fd1e935ff2caadd90d7f60_demo_request%402x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-09T15:04:08.198Z",
+            "updated_at": "2023-03-23T22:08:33.275Z",
+            "last_updated_by": null
+        }
+    }
+]

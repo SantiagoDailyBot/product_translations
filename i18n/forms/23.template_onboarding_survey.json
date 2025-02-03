@@ -1,0 +1,278 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "d4773cf3-d74c-4c7a-8a45-f87bb1666778",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Onboarding survey",
+            "description": "A survey for new team members to report on the status of their onboarding process.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "8bb43fd1-cd30-440e-9ec9-01aff55dae43",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "choices": [
+                            {
+                                "label": "Yes",
+                                "value": true,
+                                "placeholder": "Yes"
+                            },
+                            {
+                                "label": "No",
+                                "value": false,
+                                "placeholder": "No"
+                            }
+                        ],
+                        "question": "Did you complete your onboarding checklist?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Sí",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "No",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "¿Completaste tu lista de verificación de onboarding?:",
+                                    "question_short": "¿Onboarding completado?"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Sim",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "Não",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "Você completou sua lista de verificação de integração?:",
+                                    "question_short": "Completou a integração?"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "boolean",
+                        "question_short": "Completed onboarding?"
+                    },
+                    {
+                        "uuid": "89cbd492-7551-4f8d-8c82-9c971dfd9ebd",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "choices": [
+                            {
+                                "label": "Yes",
+                                "value": true,
+                                "placeholder": "Yes"
+                            },
+                            {
+                                "label": "No",
+                                "value": false,
+                                "placeholder": "No"
+                            }
+                        ],
+                        "question": "Is your required personal documentation complete?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Sí",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "No",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "¿Está completa tu documentación personal requerida?:",
+                                    "question_short": "¿Documentación personal completa?"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Sim",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "Não",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "Sua documentação pessoal necessária está completa?:",
+                                    "question_short": "Documentação pessoal concluída?"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "boolean",
+                        "question_short": "Personal documentation completed?"
+                    },
+                    {
+                        "uuid": "5ad6f1d6-9a7a-42c6-b25a-3281d5197ad1",
+                        "logic": {
+                            "next_key": 3,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "choices": [
+                            {
+                                "label": "Yes",
+                                "value": true,
+                                "placeholder": "Yes"
+                            },
+                            {
+                                "label": "No",
+                                "value": false,
+                                "placeholder": "No"
+                            }
+                        ],
+                        "question": "Did you have the opportunity to meet all your colleagues?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "choices": [
+                                        {
+                                            "label": "Sí",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "No",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "¿Tuviste la oportunidad de conocer a todos tus colegas?:",
+                                    "question_short": "¿Conociste a tu equipo?"
+                                },
+                                "pt": {
+                                    "choices": [
+                                        {
+                                            "label": "Sim",
+                                            "value": true
+                                        },
+                                        {
+                                            "label": "Não",
+                                            "value": false
+                                        }
+                                    ],
+                                    "question": "Você teve a oportunidade de conhecer todos os seus colegas?:",
+                                    "question_short": "Conheceu todo mundo?"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "boolean",
+                        "question_short": "Met everyone?"
+                    },
+                    {
+                        "uuid": "ffa247b2-c9c9-49da-8285-e28920b4657d",
+                        "logic": {
+                            "next_key": 4,
+                            "prev_key": 2,
+                            "question_key": 3
+                        },
+                        "question": "Do you have any comments or feedback about your onboarding process? If so, please leave them here:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": true,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Tienes algún comentario sobre tu proceso de onboarding?:",
+                                    "question_short": "Comentarios"
+                                },
+                                "pt": {
+                                    "question": "Você tem algum comentário ou feedback sobre seu processo de integração?:",
+                                    "question_short": "Comentários"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Comments"
+                    },
+                    {
+                        "uuid": "e8cf3ae5-92e3-4483-b8f3-d0c29bdbc522",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 3,
+                            "question_key": 4
+                        },
+                        "question": "Do you need to have a follow-up call with your manager or HR team? If so, explain why below, if not, simply write no:",
+                        "is_hidden": false,
+                        "is_blocker": true,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Necesitas tener una llamada de seguimiento con tu mánager o equipo de recursos humanos? Si es así, explica por qué a continuación, si no, simplemente escribe no:",
+                                    "question_short": "Seguimiento"
+                                },
+                                "pt": {
+                                    "question": "Você precisa ter uma chamada de acompanhamento com seu gerente ou equipe de RH? Se sim, explique por que abaixo, se não, simplesmente escreva não:",
+                                    "question_short": "Acompanhamento"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Follow-up call?"
+                    }
+                ],
+                "version": 8,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "Use this form to let newcomers give feedback after they've joined your team.",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Encuesta de incorporación",
+                    "description": "Una encuesta para que los nuevos miembros del equipo informen sobre el estado de su proceso de incorporación."
+                },
+                "pt": {
+                    "name": "Pesquisa de integração",
+                    "description": "Uma pesquisa para novos membros da equipe relata o status de seu processo de integração."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 4,
+            "emoji_url": "https://d1d3uvgqmu38d0.cloudfront.net/static/templates_icons/onboarding@2x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-10T13:29:31.874Z",
+            "updated_at": "2023-03-23T22:12:35.338Z",
+            "last_updated_by": null
+        }
+    }
+]

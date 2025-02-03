@@ -1,0 +1,128 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "5c598ae8-894d-480d-8a63-d51a65612598",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Warn your team",
+            "description": "A must-have form for teammates to alert about conditions that don't let them or anyone else perform their work adequately.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "802d55e6-43fc-4373-b84e-b60d2eda7b0e",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "What would you like to alert the work team?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Qué te gustaría alertar al equipo de trabajo?:",
+                                    "question_short": "Alerta"
+                                },
+                                "pt": {
+                                    "question": "O que você gostaria de alertar a equipe de trabalho?:",
+                                    "question_short": "Alerta"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Alert"
+                    },
+                    {
+                        "uuid": "9dda218d-88dc-4ead-8df6-f4adbf29794b",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "How do you think the team is being affected or will be affected?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Cómo crees que se está viendo afectando o se verá afectado el equipo de trabajo?:",
+                                    "question_short": "Efectos"
+                                },
+                                "pt": {
+                                    "question": "Como você acha que a equipe de trabalho está sendo afetada ou será afetada?:",
+                                    "question_short": "Efeitos"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Effects"
+                    },
+                    {
+                        "uuid": "3a893fb6-70dc-4bb6-be04-6d5607b7ae22",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "question": "Is there any known solution to eliminate the alert?:",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Conoces alguna solución para eliminar la alerta?:",
+                                    "question_short": "Soluciones"
+                                },
+                                "pt": {
+                                    "question": "Você conhece alguma solução para eliminar o alerta?:",
+                                    "question_short": "Soluções"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Solutions"
+                    }
+                ],
+                "version": 13,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "Work teams can see their performance threatened by multiple factors and variables. Changes are often accompanied by rejections. Anonymously, through this form, you will be able to alert and see alert reports on important issues",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Alerta a tu equipo",
+                    "description": "Un formulario imprescindible para que los compañeros de equipo alerten sobre las condiciones que no les permiten a ellos ni a nadie más realizar su trabajo adecuadamente."
+                },
+                "pt": {
+                    "name": "Alertar sua equipe",
+                    "description": "Um formulário essencial para os colegas de equipe alertarem sobre condições que não permitem que eles ou qualquer outra pessoa realizem adequadamente seu trabalho."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 4,
+            "emoji_url": "https://d1d3uvgqmu38d0.cloudfront.net/static/templates_icons/warn_your_team@2x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\"]",
+            "created_at": "2022-08-06T05:53:12.655Z",
+            "updated_at": "2023-03-23T22:20:21.490Z",
+            "last_updated_by": null
+        }
+    }
+]

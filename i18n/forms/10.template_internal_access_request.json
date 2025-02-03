@@ -1,0 +1,155 @@
+[
+    {
+        "model": "followups.template",
+        "pk": "07200568-8375-4174-b5da-39bf5c2c6604",
+        "fields": {
+            "organization": null,
+            "system_default": true,
+            "owner": null,
+            "name": "Internal access request",
+            "description": "Does a teammate need access to a particular platform? This is a must-have access request form to stay SOC2 compliant.",
+            "archived": false,
+            "questions": {
+                "fields": [
+                    {
+                        "uuid": "d71b10f9-d5d4-41e7-802a-8c44aee1fdb8",
+                        "logic": {
+                            "next_key": 1,
+                            "prev_key": -1,
+                            "question_key": 0
+                        },
+                        "question": "What type of access are you requesting?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Qué tipo de acceso estás solicitando?",
+                                    "question_short": "Tipo de acceso"
+                                },
+                                "pt": {
+                                    "question": "Que tipo de acesso você está solicitando?",
+                                    "question_short": "Tipo de acesso"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Access type"
+                    },
+                    {
+                        "uuid": "c9d62527-ee5c-46e6-bf38-08fc11ac145b",
+                        "logic": {
+                            "next_key": 2,
+                            "prev_key": 0,
+                            "question_key": 1
+                        },
+                        "question": "Describe what access is required and why you need it.",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "Describe qué acceso se requiere y por qué lo necesitas.",
+                                    "question_short": "Acceso requerido"
+                                },
+                                "pt": {
+                                    "question": "Descreva qual acesso é necessário e por que você precisa dele.",
+                                    "question_short": "Acesso necessário"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Access required"
+                    },
+                    {
+                        "uuid": "7a39a857-5f41-48c6-8a0a-567f03ef31b7",
+                        "logic": {
+                            "next_key": 3,
+                            "prev_key": 1,
+                            "question_key": 2
+                        },
+                        "question": "For how long should this access be given?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Durante cuánto tiempo se debe otorgar este acceso?",
+                                    "question_short": "Duración del acceso"
+                                },
+                                "pt": {
+                                    "question": "Por quanto tempo esse acesso deve ser concedido?",
+                                    "question_short": "Duração do acesso"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Access duration"
+                    },
+                    {
+                        "uuid": "2c600689-17c6-4d94-874f-e35fc8e4381e",
+                        "logic": {
+                            "next_key": -1,
+                            "prev_key": 2,
+                            "question_key": 3
+                        },
+                        "question": "Who should approve your request?",
+                        "is_hidden": false,
+                        "is_blocker": false,
+                        "is_optional": false,
+                        "extra_params": {
+                            "i18n": {
+                                "es": {
+                                    "question": "¿Quién debe aprobar tu solicitud?",
+                                    "question_short": "Solicitud de aprobación"
+                                },
+                                "pt": {
+                                    "question": "Quem deve aprovar sua solicitação?",
+                                    "question_short": "Pedido de aprovação"
+                                }
+                            },
+                            "special_vars": []
+                        },
+                        "question_type": "text",
+                        "question_short": "Approval request"
+                    }
+                ],
+                "version": 7,
+                "has_conditional_questions": false
+            },
+            "has_conditional_questions": false,
+            "has_questions_variations": false,
+            "intro": "This form should be used to request restricted access due to security protocols",
+            "outro": "",
+            "i18n_meta": {
+                "es": {
+                    "name": "Formulario de solicitud de acceso",
+                    "description": "¿Un compañero de equipo necesita acceso a una plataforma en particular? Este es un formulario de solicitud de acceso imprescindible para cumplir con SOC2."
+                },
+                "pt": {
+                    "name": "Solicitação de acesso interno",
+                    "description": "Um colega de equipe precisa de acesso a uma plataforma específica? Este é um formulário obrigatório de solicitação de acesso para manter a conformidade com o SOC2."
+                }
+            },
+            "metadata": {
+                "has_special_vars": false
+            },
+            "show_all_blockers": true,
+            "category": 3,
+            "emoji_url": "https://d1d3uvgqmu38d0.cloudfront.net/static/templates_icons/access_request@2x.png",
+            "skill_type": "forms",
+            "frequency_type": "weekly",
+            "frequency": 1,
+            "frequency_on_days": "[\"1\", \"2\", \"3\", \"4\", \"5\"]",
+            "created_at": "2022-08-09T04:18:53.299Z",
+            "updated_at": "2023-03-23T22:10:12.476Z",
+            "last_updated_by": null
+        }
+    }
+]

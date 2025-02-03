@@ -1,0 +1,186 @@
+[
+  {
+    "model": "followups.template",
+    "pk": "b77eec6d-6ce9-4130-8bdf-3898330fbe29",
+    "fields": {
+      "organization": null,
+      "system_default": true,
+      "owner": null,
+      "name": "Peer-to-peer feedback",
+      "description": "Anonymously survey your teammates and other employees about how you're performing, so you can identify areas for improvement and growth on time.",
+      "archived": false,
+      "questions": {
+        "fields": [
+          {
+            "uuid": "e95b8844-94df-4df7-b4fc-8ae15d85c74d",
+            "logic": {
+              "next_key": 1,
+              "prev_key": -1,
+              "question_key": 0
+            },
+            "question": "What have you observed about my time management?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "¿Qué has observado sobre mi gestión del tiempo?",
+                  "question_short": "Gestión del tiempo"
+                },
+                "pt": {
+                  "question": "O que você observou sobre a minha gestão de tempo?",
+                  "question_short": "Gestão de tempo"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Time management"
+          },
+          {
+            "uuid": "414fc3a0-2107-4c9e-8225-5879fa9ba571",
+            "logic": {
+              "next_key": 2,
+              "prev_key": 0,
+              "question_key": 1
+            },
+            "question": "What are specific ways I can better support our team’s mission?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "¿Cuáles son las formas específicas en las que puedo apoyar mejor los objetivos de nuestro equipo?",
+                  "question_short": "Apoyar nuestros objetivos"
+                },
+                "pt": {
+                  "question": "Quais são as maneiras específicas de melhor apoiar os objetivos de nossa equipe?",
+                  "question_short": "Apoiar nossos objetivos"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Support our mission"
+          },
+          {
+            "uuid": "634854e7-b69f-4ba6-ba83-eb5515c4bf6a",
+            "logic": {
+              "next_key": 3,
+              "prev_key": 1,
+              "question_key": 2
+            },
+            "question": "Am I currently collaborating with the right people to achieve our desired outcomes for the team?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "¿Estoy colaborando actualmente con las personas adecuadas para lograr los resultados deseados para el equipo?",
+                  "question_short": "Resultados deseados"
+                },
+                "pt": {
+                  "question": "Atualmente, estou colaborando com as pessoas certas para alcançar os resultados desejados para a equipe?",
+                  "question_short": "Resultados desejados"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Desired outcomes"
+          },
+          {
+            "uuid": "9f478b50-f1fa-40a7-9cc6-3de74e55c34c",
+            "logic": {
+              "next_key": 4,
+              "prev_key": 2,
+              "question_key": 3
+            },
+            "question": "In terms of working and communication style, what kinds of changes do you want to see in me?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "En cuanto a estilo de trabajo y comunicación, ¿qué tipo de cambios quieres ver en mí?",
+                  "question_short": "Cambios"
+                },
+                "pt": {
+                  "question": "Em termos de trabalho e estilo de comunicação, que tipo de mudanças você quer ver em mim?",
+                  "question_short": "Mudanças"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Ch-ch-changes"
+          },
+          {
+            "uuid": "0441dff3-bfe6-4bc4-8159-544008cda571",
+            "logic": {
+              "next_key": -1,
+              "prev_key": 3,
+              "question_key": 4
+            },
+            "question": "What do I need to do to get ready for my next project or role?",
+            "is_hidden": false,
+            "is_blocker": false,
+            "is_optional": false,
+            "extra_params": {
+              "i18n": {
+                "es": {
+                  "question": "¿Qué debo hacer para prepararme para mi próximo proyecto o cargo?",
+                  "question_short": "Próximos pasos"
+                },
+                "pt": {
+                  "question": "O que devo fazer para me preparar para meu próximo projeto ou posição?",
+                  "question_short": "Próximos passos"
+                }
+              },
+              "special_vars": []
+            },
+            "question_type": "text",
+            "question_short": "Next steps"
+          }
+        ],
+        "version": 6,
+        "has_conditional_questions": false
+      },
+      "has_conditional_questions": false,
+      "has_questions_variations": false,
+      "intro": "Hey, I'd like to hear about the strengths and weaknesses that you observe in my work. It helps me if you can provide specific examples when discussing areas of improvement.",
+      "outro": "Thanks for helping me improve! 😉",
+      "i18n_meta": {
+        "es": {
+          "name": "Feedback de equipo",
+          "intro": "Hey, me gustaría conocer las fortalezas y debilidades que observas en mi trabajo. Me ayuda si puedes dar ejemplos específicos al discutir áreas de mejora.",
+          "outro": "¡Gracias por ayudarme a mejorar! 😉",
+          "description": "Encuesta anónimamente a tus compañeros de equipo y otras partes interesadas sobre tu desempeño, para que puedas identificar tus áreas de mejora y crecimiento a tiempo."
+        },
+        "pt": {
+          "name": "Feedback entre colegas",
+          "intro": "Gostaria de saber os pontos fortes e fracos que você observa no meu trabalho. Ajuda se você puder dar exemplos específicos ao discutir áreas para melhoria.",
+          "outro": "Vou usar isso para ficar melhor. 😉",
+          "description": "Realize uma pesquisa anônima com seus colegas de equipe e outros funcionários sobre como você está se saindo, para que você possa identificar áreas para melhoria e crescimento a tempo."
+        }
+      },
+      "metadata": {
+        "has_special_vars": false
+      },
+      "show_all_blockers": true,
+      "category": null,
+      "emoji_url": "https://d2e7nn6oh5ucns.cloudfront.net/images/template_icons/emoji_peer_to_peer_feedback@2x.png",
+      "skill_type": "forms",
+      "frequency_type": "weekly",
+      "frequency": 1,
+      "frequency_on_days": "[\"1\"]",
+      "created_at": "2021-06-20T01:56:43.963Z",
+      "updated_at": "2023-03-23T22:13:52.558Z",
+      "last_updated_by": null
+    }
+  }
+]
