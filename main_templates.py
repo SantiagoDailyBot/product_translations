@@ -6,7 +6,7 @@ from openai import OpenAI
 #       python3 -m venv myenv
 #       source myenv/bin/activate
 #       pip install openai
-#       python main.py web/agents.ts 
+#       python main_templates.py checkins/retrospective.json
 
 # API Key de OpenAI
 OPENAI_API_KEY = "-"
@@ -23,13 +23,12 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
 def translate_text(text, client, is_template=False):
-    """Traducir un texto usando OpenAI, omitiendo las variables."""
+    """Traduce un texto usando OpenAI, omitiendo las variables."""
     
-    # Buscar las variables en el texto
+    # Extraer variables del texto
     variables = re.findall(r'\${(.*?)}|{{(.*?)}}', text)
     placeholders = {}
 
-    # Reemplazar las variables por marcadores de posición
     for i, var in enumerate(variables):
         placeholder = f"__VAR_{i}__"
         placeholders[placeholder] = var[0] if var[0] else var[1]
@@ -37,11 +36,11 @@ def translate_text(text, client, is_template=False):
 
     print(f"Traduciendo el texto (sin variables): {text[:50]}...")
 
-    # Crear el prompt para OpenAI dependiendo de si es un template o no
+    # Crear el prompt para la API de OpenAI
     messages_prompt = [
         {
             "role": "system",
-            "content": "You are a helpful assistant that translates English to Korean."
+            "content": "You are a helpful assistant that translates text into French while keeping the JSON structure intact. Only translate the text inside the i18n field within extra_params and add the new translation under the corresponding language abbreviation (e.g., pt for Portuguese) at the bottom of that key. Do not modify any other part of the JSON."
         },
         {
             "role": "user",
@@ -69,53 +68,65 @@ def translate_text(text, client, is_template=False):
     return translated
 
 
-def translate_ts_file(file_path, client):
-    """Traducir el contenido de un archivo .ts."""
+def translate_json_file(file_path, client):
+    """Traducir el contenido de un archivo .json."""
     print(f"Procesando archivo: {file_path}")
-    is_template = "templates" in file_path  # Verificar si es un archivo de la carpeta 'templates'
     with open(file_path, "r", encoding="utf-8") as file:
-        content = file.read()
-    translated_content = translate_text(content, client, is_template)
-    if translated_content is None:
-        print(f"No se pudo traducir el archivo: {file_path}")
+        content = json.load(file)
+
+    content_str = json.dumps(content, ensure_ascii=False)  
+    translated_str = translate_text(content_str, client)
+
+    if not translated_str:
+        print(f"Error: No se recibió respuesta de la API para {file_path}")
         return None
+
+    # Eliminar posibles caracteres no deseados
+    translated_str = translated_str.strip("```json").strip("```").strip()
+
+    try:
+        translated_content = json.loads(translated_str)  
+    except json.JSONDecodeError as e:
+        print(f"Error al decodificar JSON en {file_path}: {e}")
+        print(f"Respuesta de la API: {translated_str}")
+        return None
+
     print(f"Contenido traducido para: {file_path}")
     return translated_content
 
 
+
 def process_file(file_path, output_dir, client):
-    """Procesar un archivo específico .ts."""
+    """Procesar un archivo específico .json."""
     if not os.path.exists(file_path):
         print(f"El archivo {file_path} no existe.")
         return
-
-    translated_content = translate_ts_file(file_path, client)
+    
+    translated_content = translate_json_file(file_path, client)
     if translated_content is not None:
         relative_path = os.path.relpath(file_path, BASE_DIR)
         output_path = os.path.join(output_dir, relative_path)
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         print(f"Guardando archivo traducido: {output_path}")
         with open(output_path, "w", encoding="utf-8") as output_file:
-            output_file.write(translated_content)
+            json.dump(translated_content, output_file, ensure_ascii=False, indent=4)
         print(f"Archivo traducido guardado en: {output_path}")
     else:
         print(f"Error al procesar: {file_path}")
 
-
 def process_directory(directory_path, output_dir, client):
-    """Procesar todos los archivos .ts dentro de un directorio."""
+    """Procesar todos los archivos .json dentro de un directorio."""
     for root, _, files in os.walk(directory_path):
         for file in files:
-            if file.endswith(".ts"):
+            if file.endswith(".json"):
                 file_path = os.path.join(root, file)
                 process_file(file_path, output_dir, client)
-
 
 def main():
     """Función principal del script."""
     import argparse
-    parser = argparse.ArgumentParser(description="Traducir archivo(s) .ts usando OpenAI API.")
-    parser.add_argument("path", help="Ruta de un archivo o directorio (ej. 'web/agents.ts' o 'web').")
+    parser = argparse.ArgumentParser(description="Traducir archivo(s) .json usando OpenAI API.")
+    parser.add_argument("path", help="Ruta de un archivo o directorio (ej. 'data/file.json' o 'data').")
     args = parser.parse_args()
 
     # Detectar si es un archivo o un directorio
@@ -131,7 +142,6 @@ def main():
         print(f"La ruta especificada no existe: {path}")
 
     print("Traducción completada.")
-
 
 if __name__ == "__main__":
     main()
